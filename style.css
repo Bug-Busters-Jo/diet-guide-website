@@ -157,6 +157,9 @@ header{
 }
 
 /* Signup form */
+#dataMain{
+    height:90vh;
+}
 section{
     position:relative;
     padding:6.25%;
@@ -208,8 +211,44 @@ section{
 }
 
 #submitBtn{
-
-}
+    position: relative;
+    /* left: 25%; */
+    /* top: 25%; */
+    background: #843a23;
+    color: whitesmoke;
+    font-size: 16px;
+    margin: 20px;
+    width: 200px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 4px;
+    top: 25%;
+    left: 6.25%;
+  }
+  #submitBtn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #submitBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #submitBtn span:hover {
+    padding-right: 25px;
+  }
+  
+  #submitBtn span:hover:after {
+    opacity: 1;
+    right: 0;
+  }
 @keyframes imageAnimation { 
     0% { 
       opacity: 0; 
