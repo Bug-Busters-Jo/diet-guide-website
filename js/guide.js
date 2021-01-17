@@ -80,6 +80,21 @@ function calcolations(event){
     var BWI;
     var x ;
     var y;
+    var underwightExce=document.getElementById('underwightExce');
+    var idealwightExce=document.getElementById('idealwightExce');
+    var overwightExce=document.getElementById('overwightExce');
+    var obsitywightExce=document.getElementById('obsitywightExce');
+    var massage;
+    underwightExce.style.display="none";
+    idealwightExce.style.display="none";
+    overwightExce.style.display="none";
+    obsitywightExce.style.display="none";
+
+
+
+
+
+
     if (userDate != null){
         x = Number(userDate.height);
         y  =  Number(userDate.waigth);
@@ -91,17 +106,29 @@ function calcolations(event){
         console.log(x,y);
     }
     BWI = (y / ((x/100)*(x/100))).toFixed(1);
-    if(BWI<18.5){
+
+    if(BWI<=18.5){
         var massage="under Wieght"
+        console.log(massage)
+        underwightExce.style.display="block";
+        console.log(massage)
+
     }
-    if(18.5<BWI<24.9){
-        var massage=" ideal weight "
+    else if(18.5<=BWI && BWI<=24.9){
+        var massage=" ideal weight ";
+        console.log(massage)
+
+        idealwightExce.style.display="block";
     }
-    if(25<BWI<29.9){
-        var massage=" over weight "
+    else if(25<=BWI && BWI<=29.9){
+        var massage=" over weight ";
+       overwightExce.style.display="block";
+
     }
-    if(30<BWI){
-        var massage=" obesity weight "
+    else if(30<=BWI){
+        var massage=" obesity weight ";
+        obsitywightExce.style.display="block";
+
     }
     console.log(BWI);
     ruslt.textContent='your ruslt is '+" "+BWI+" "+ "you are in "+" "+ massage +" "+"region"
