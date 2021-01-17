@@ -47,3 +47,9 @@ Database
 The name of column
 The required data type
 Indication if the column is a key
+
+| First Header | Second Header                                                                   |
+| ------------ | ------------------------------------------------------------------------------- |
+| Login        | takes the name and passwrod saved on local storage                              |
+| Sign Up      | fill the name and password and re- password and tall and hight and phone number |
+| User Input   | Tall and Hight                                                                  |
