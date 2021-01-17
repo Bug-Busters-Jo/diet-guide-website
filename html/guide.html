@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guide</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div>
+                <h1>
+                    Body mass index (BMI) 
+                </h1>
+                <h4>
+                    Body mass index (BMI) is a common tool for deciding whether a person has an appropriate body weight. It measures a person’s weight in relation to their height.
+                </h4>
+                <p>According to the National Institutes of Health (NIH):</p>
+                <ul>
+                    <li>A BMI of less than 18.5 means that a person is underweight.</li>
+                    <li>A BMI of between 18.5 and 24.9 is ideal.
+                    </li>
+                    <li>A BMI of between 25 and 29.9 is overweight.
+                    </li>
+                    <li>A BMI over 30 indicates obesity.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>BMI Calculater </h1>
+            </div>
+        </section>
+        <section>
+            <div id = 'with-account'>
+                <h3>Waight: <p id='waight'></p>
+                </h3>
+                <h3>height: <p id='height'></p>
+                </h3>
+                <h3>Name: <p id='name'></p>
+                </h3>
+                <h3>Email: <p id='email'></p>
+                </h3>
+                <h3>Mobile: <p id="mobile"></p>
+                </h3>
+                <button id="edit-botton" onclick="updateTheDate()">Edit Profile</button>
+                <div id = 'edit-div'>
+                    <form id='edit-form'>
+                        <div>
+                            <h1>Update Data</h1>
+                            <hr>
+                            <div id="waight-div">
+                                <label for="waight"><b>Waight</b></label>
+                                <input id='waight-input' type="number" placeholder="waight" name="waight" step="any"> 
+                            </div>
+                            <div id = "height-div">
+                                <label for="height"><b>Height</b></label>
+                                <input id = 'height-input' type="number" placeholder="height" name="height" step="any">
+                            </div>
+                            <div>
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                    <button onclick="hideForm()">Hide Form</button>
+                </div>
+    
+            </div>
+           <div id = 'no-account'>
+               <form >
+                    <label>waight: </label>
+                    <input type='number' id = "input-weight-no-account" step="any">
+                    <label> height: </label>
+                    <input type='number'  id = "input-haight-no-account" step="any">
+               </form>
+           </div>
+           <button onclick="calcolations()" >submit</button>
+        </section>
+        <section>
+            <h2>Ruslt</h2>
+            <p id="ruslt"></p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/guide.js"></script>
+</body>
+
+</html>
