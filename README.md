@@ -4,15 +4,15 @@
 
 ## *Diet a Guide Website*💻📺
 
-members™️:~
-©️ ©️ ©️ ©️ ©️ ©️ ©️ ©️
+members™️:~<br />
+©️ ©️ ©️ ©️ ©️ ©️ ©️ ©️<br />
 
 - Odai Qudah
 - Ammar Ebraheem
 - Areej Obaid
 - Elias Dadoush
 - Mohammad Omar
-- Yahya Omari
+- Yahya Omari<br />
   ©️ ©️ ©️ ©️ ©️ ©️ ©️ ©️
 
 ---
@@ -21,7 +21,7 @@ members™️:~
 
 The purpose of the website is to help a person with their diet plans. Based on the input provided by the user
 , a guide is generated to help the user succeed in his/her weight loss efforts or to advise the user on how to gain muscles.
-It will be provide a step-by-step guide on how to achieve the user's diet goals.
+It will be provide a step-by-step guide on how to achieve the user's diet goals.<br />
 🆗
 
 ---
@@ -39,7 +39,8 @@ I want my customers to check there result any time after they create there accou
 
 ### WireFrame
 
-🌏🌏🌏🌏🌏🌏
+<br />
+🌏🌏🌏🌏🌏🌏<br />
 We used this website to build our wireframe https://lucid.app/lucidchart/8038ed58-6eed-49fe-aa54-55bbff81e062/edit?shared=true&page=0_0#
 
 ---
@@ -60,4 +61,4 @@ Indication if the column is a key
 
 ## 👍
 
-! [Wireframe](imagewireframe.png)
+[Wireframe](imagewireframe.png)
