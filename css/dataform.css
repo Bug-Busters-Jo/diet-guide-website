@@ -1,14 +1,17 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80)
+}
 #dataMain {
     text-align: center;
 }
 #log-form{
     width: 35%;
     border: 0.5px solid black;
-    box-shadow: 3px 7px 3px #888888;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin: auto;
     border-radius: 7px;
     padding: 20px;
-    
+    background-color: rgba(255, 255, 255, 0.719) ;
 }
 div{
     margin-top: 20px;
@@ -17,24 +20,34 @@ input{
     margin-left: 10px;
     border: none;
     border-bottom: solid 0.3px;
+    font-style: italic;
 }
 #swetch-page{
-    right: -40px;
+    right: -53px;
     position: relative;
-    top: -48px;
-    position: relative;
-    padding:5px;
-    font-weight: 700;
-    border: solid 0.3px;
-    border-radius: 3px;
+    top: -57px;
+    background-color: #544147;
+   border: none;
+   border-radius: 3px;
+   color: #fff;
+   font-size: .9em;
+   padding: 10px 10px;
+   text-transform: uppercase;
+   font-weight: normal;
+
 }
 #submitting{
-    position: relative;
-    border: solid 0.3px;
     border-radius: 3px;
-    right: 60px;
-    padding: 5px;
-    font-weight: 700;    
+    font-style: normal;
+    position: relative;
+    right: 85px;
+    background-color: #544147;
+   border: none;
+   color: #fff;
+   font-size: .9em;
+   padding: 10px 10px;
+   text-transform: uppercase;
+   font-weight: normal;
 }
 
 label{
