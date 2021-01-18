@@ -1,3 +1,32 @@
 #dataMain {
     text-align: center;
 }
+#log-form{
+    width: 35%;
+    border: 0.5px solid black;
+    box-shadow: 3px 7px 3px #888888;
+    margin: auto;
+    border-radius: 7px;
+    padding: 10px;
+    
+}
+div{
+    margin-top: 20px;
+}
+input{
+    margin-left: 10px;
+    border: none;
+    border-bottom: solid 0.3px;
+}
+#swetch-page{
+    right: -50px;
+    position: relative;
+    top: -31px;
+    position: relative;
+}
+#submitting{
+    position: relative;
+    border: solid 0.3px;
+    border-radius: 3px;
+    right: 80px;
+}

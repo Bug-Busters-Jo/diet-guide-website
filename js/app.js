@@ -14,7 +14,7 @@ window.onload = function(){
     var loginLogout = document.getElementById('login-logout');
     if(userDate != null){
         userDate = JSON.parse(userDate);
-        loginLogout.textContent = 'Log Out'
+        loginLogout.textContent = `${userDate.name} Log Out`
     }else{
         loginLogout.textContent = 'Log In'
     }
