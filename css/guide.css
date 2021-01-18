@@ -184,13 +184,13 @@ width: 100%;
 }
 
 .btn{
-   background: #b2ebf9;
-   text-align: center;
-   padding: 15px;
-   border-radius: 5px;
-   color: black;
-   cursor: pointer;
-   text-transform: uppercase; 
+  background: #b2ebf9;
+  text-align: center;
+  padding: 15px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase; 
 }
 
 label{
@@ -223,4 +223,7 @@ form input{
     padding: 7px 10px;
     margin-left: 0%;
     margin-right: 66%;
+}
+.para{
+  margin-left: 1%;
 }
