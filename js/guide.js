@@ -1,3 +1,5 @@
+"use strict"
+
 let form = document.getElementById('edit-form');
 let divEdit = document.getElementById('edit-div');
 let isMached;

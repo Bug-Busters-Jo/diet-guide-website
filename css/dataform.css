@@ -1,0 +1,72 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#dataMain {
+    text-align: center;
+}
+#log-form{
+    width: 35%;
+    border: 0.5px solid black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: auto;
+    border-radius: 7px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.719) ;
+}
+div{
+    margin-top: 20px;
+}
+input{
+    margin-left: 10px;
+    border: none;
+    border-bottom: solid 0.3px;
+    font-style: italic;
+}
+p{
+    margin-top: 20px;
+}
+#swetch-page{
+    right: -53px;
+    position: relative;
+    top: -57px;
+    background-color: #544147;
+   border: none;
+   border-radius: 3px;
+   color: #fff;
+   font-size: .9em;
+   padding: 10px 10px;
+   text-transform: uppercase;
+   font-weight: normal;
+
+}
+#submitting{
+    border-radius: 3px;
+    font-style: normal;
+    position: relative;
+    right: 85px;
+    background-color: #544147;
+   border: none;
+   color: #fff;
+   font-size: .9em;
+   padding: 10px 10px;
+   text-transform: uppercase;
+   font-weight: normal;
+}
+
+label{
+    color: #202124;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3333;
+}
+
+#logIn-UP{
+    color: #202124;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+}

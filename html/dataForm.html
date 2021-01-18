@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/dataform.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <title>Sign Up</title>
   </head>
   <body>
@@ -16,8 +18,7 @@
               <a href = "./index.html"><li class = "brand-name"></li></a>
               <li class = "nav-item"><a href="./dataForm.html">Diet Advice</a></li>
               <ul class = "nav-right">
-                  <li><a href="">Login</a> </li>
-                  <li><a href="">Sign Up</a> </li>
+                  <li><a id ='login-logout' onclick="loginLogout()">Login </a></li>
                   <li ><a href="./guide.html">Guide</a></li>
               </ul>
               
@@ -26,41 +27,46 @@
   </header>
     <main id="dataMain">
       <section>
-        <form class="form" action="">
-          <h3>Get Guide</h3>
+        <form id = 'log-form'>
           <div>
-            <ul>
-              <label for="firstName">First Name</label>
-              <li id="firstName"><input type="text" name="" id="" /></li>
-              <label for="lastName">Last Name</label>
-              <li id="lastName"><input type="text" name="" id="" /></li>
-            </ul>
-            <ul>
-              <label for="email">Email</label>
-              <li id="email"><input type="text" name="" id="" /></li>
-              <label for="age">Age</label>
-              <li id="age"><input type="text" name="" id="" /></li>
-            </ul>
-            <ul>
-              <label for="height">Height</label>
-              <li id="height"><input type="text" name="" id="" /></li>
-              <label for="weight">Weight</label>
-              <li id="weight"><input type="text" name="" id="" /></li>
-            </ul>
-            <ul>
-              <label for="email">Date of Birth</label>
-              <li id="email"><input type="date" name="" id="" /></li>
-            </ul>
+              <h1 id = 'logIn-UP'>Sign Up</h1>
+              <hr>
+              <div id = 'email-div'>
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email">
+              </div>
+              <div id = 'email-name'>
+                  <label for="name"><b>Name</b></label>
+                  <input type="text" placeholder="Enter name" name="name" required>
+              </div>
+              <div>
+                  <label for="psw"><b>Password</b></label>
+                  <input id="psw-input"  type="password" placeholder="Enter Password" name="psw" required>
+              </div>
+              <div id = "psw-repeat-div">
+                  <label for="pswRepeat"><b>Repeat Password</b></label>
+                  <input id="psw-repeat-input" type="password"  onfocusout ="repPassword()" placeholder="Repeat Password" name="pswRepeat" >
+                  <p id='erorr-message' style="color: red;display: none;">The Repeat Password And The Password are Not Match!</p>
+              </div>
+              <div id = "waight-div">
+                  <label for="waight"><b>Weight</b></label>
+                  <input type="number" placeholder="weight" name="waight" >
+              </div>
+              <div id = "height-div">
+                  <label for="height"><b>Height</b></label>
+                  <input id='height-input' type="number" placeholder="height" name="height" >
+              </div>
+              <div  id = "mobile-div">
+                  <label for="mobile"><b>Mobile</b></label>
+                  <input id='mobile-input' type="text" placeholder="mobile" name="mobile" >
+              </div>
+  
+              <div>
+                  <input id="submitting" type="submit" value="Submit">
+              </div>
           </div>
-          <div>
-            <button id="submitBtn" type="submit"><span>Submit</span></button>
-            <img
-              src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1301&q=80"
-              alt=""
-            />
-          </div>
-        </form>
-      </section>
+      </form>
+      <button id = 'swetch-page' onclick="loginPage()">I have Account</button>
     </main>
     <footer>
       <ul id="aboutUs">
@@ -71,5 +77,7 @@
         <li>Email : whatever@gmail.com</li>
       </ul>
     </footer>
+    <script src="../js/app.js"></script>
+    <script src="../js/log.js"></script>
   </body>
 </html>
