@@ -33,6 +33,29 @@ nav{
     margin: 0 auto;
     text-align: center;
 }
+#nav, footer{
+  background:#1b1a1a;
+}
+#nav li, footer ul{
+  display:inline-block;
+  padding:20px;
+  vertical-align: middle;
+}
+#nav li a, .nav-right, footer ul a{
+  text-decoration: none;
+  color: gray;
+}
+.nav-right{
+  float:right;
+  font-size: 18px
+}
+.brand-name{
+  font-size: 2em;
+  font-style:italic;
+}
+.nav-item{
+  font-size:18px;
+}
 #getGuideBtn{
     /* background:#634343; */
     background: #843a23;
@@ -75,19 +98,7 @@ nav{
 #nav, footer{
     background:#1b1a1a;
 }
-#nav li, footer ul{
-    display:inline-block;
-    padding:20px;
-    vertical-align: middle;
-}
-#nav li a, .nav-right, footer ul a{
-    text-decoration: none;
-    color: gray;
-}
-.nav-right{
-    float:right;
-    font-size: 18px
-}
+
 .move-right{
     position:relative;
     color:gray;
@@ -116,13 +127,6 @@ nav{
     width:75%;
     margin:20px auto;
     text-indent: 30px;
-}
-.brand-name{
-    font-size: 2em;
-    font-style:italic;
-}
-.nav-item{
-    font-size:18px;
 }
 .slideshow{
     width:100%;
