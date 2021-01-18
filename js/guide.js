@@ -108,7 +108,7 @@ function calcolations(event){
     BWI = (y / ((x/100)*(x/100))).toFixed(1);
 
     if(BWI<=18.5){
-        var massage="under Wieght"
+        var massage="the under-weight"
         console.log(massage)
         underwightExce.style.display="block";
         console.log(massage)
@@ -121,7 +121,7 @@ function calcolations(event){
         idealwightExce.style.display="block";
     }
     else if(25<=BWI && BWI<=29.9){
-        var massage=" over weight ";
+        var massage=" over-weight ";
        overwightExce.style.display="block";
 
     }
@@ -131,6 +131,6 @@ function calcolations(event){
 
     }
     console.log(BWI);
-    ruslt.textContent='your ruslt is '+" "+BWI+" "+ "you are in "+" "+ massage +" "+"region"
+    ruslt.textContent='Your result is '+" "+BWI+"."+ " You are in "+" "+ massage +" "+"region."
 }
 
