@@ -182,10 +182,10 @@ width: 100%;
     color: gray;
 }
 ::-moz-input-placeholder{
-    color: #gray;
+    color: gray;
 }
 ::-ms-input-placeholder{
-    color: #gray;
+    color: gray;
 }
 
 .btn{
