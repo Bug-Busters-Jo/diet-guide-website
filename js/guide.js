@@ -139,4 +139,3 @@ function calcolations(event){
     console.log(BWI);
     ruslt.textContent='Your result is '+" "+BWI+"."+ " You are in "+" "+ massage +" "+"region."
 }
-
