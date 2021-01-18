@@ -7,7 +7,7 @@ var logedUser;
 let isMached;
 
 window.onload = function (){
-    isLogInPage = true
+    isLogInPage = false;
     loginPage();
     isMached = true;
     AllUserArray = localStorage.getItem('AllUserArray');
@@ -27,7 +27,7 @@ function loginPage(){
         document.getElementById("height-div").style.display = 'none';
         document.getElementById('email-div').style.display = 'none';
         document.getElementById('logIn-UP').textContent = "Log In";
-        document.getElementById('swetch-page').textContent = "Go To Sighn Up Page";    
+        document.getElementById('swetch-page').textContent = "Create Account";    
         isLogInPage = true;
     }else{
         document.getElementById("mobile-div").style.display = 'block';
@@ -35,13 +35,13 @@ function loginPage(){
         document.getElementById("waight-div").style.display = 'block';
         document.getElementById("height-div").style.display = 'block';
         document.getElementById('email-div').style.display = 'block';
-        document.getElementById('logIn-UP').textContent = "Sighn Up";
+        document.getElementById('logIn-UP').textContent = "Sign Up";
         document.getElementById('swetch-page').textContent = "I have Account";    
         isLogInPage = false;
     }
 };
 
-function sighnUpPage (){
+function signUpPage (){
     document.getElementById("mobile-div").style.display = 'block';
     document.getElementById("psw-repeat-div").style.display = 'block';
     document.getElementById("waight-div").style.display = 'block';
@@ -64,9 +64,9 @@ function submitForm(event){
     if (isLogInPage == false && isExist){
         alert('This User Is Allready Exist');
     }else if(isExist == false && isLogInPage){
-        var isConfirm =  confirm('the Name is Not Exist, do you what to Sighin first');
+        var isConfirm =  confirm('the Name is Not Exist, do you what to Sign up first');
         if(isConfirm){
-            sighnUpPage ();
+            signUpPage ();
         }
     }else if (isLogInPage == false && isExist == false){
         logedUser = new user(event.target.name.value,event.target.email.value ,event.target.psw.value, event.target.waight.value,event.target.mobile.value, event.target.height.value);
@@ -74,7 +74,7 @@ function submitForm(event){
         AllUserArray.push(logedUser);
         localStorage.setItem("AllUserArray",JSON.stringify(AllUserArray));
         localStorage.setItem("logedUser",JSON.stringify(logedUser));
-        window.location.href='account.html';
+        window.location.href='guide.html';
     }
 
 }
@@ -84,7 +84,7 @@ function checkIfUserExist(name,pass){
         if(name == AllUserArray[i].name){
             if(isLogInPage){
                 if(pass == AllUserArray[i].password){
-                    window.location.href='account.html';
+                    window.location.href='guide.html';
                     localStorage.setItem("logedUser",JSON.stringify(AllUserArray[i]));
                 }else{
                     alert('Wrong Password!');
