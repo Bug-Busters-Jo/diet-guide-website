@@ -1,9 +1,22 @@
+html,body{
+    height:100%;
+    position: relative;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
 header{
     display:block;
     /* margin-bottom: 1.5em; */
 }
-nav{
-    position:relative;
+header nav{
+    /* position: relative; */
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:10;
 }
 #nav{
     /* padding:10px; */
