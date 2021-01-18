@@ -4,27 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="./index.html"> Brand</a>
-        <!--  To link the other page for example for workout videos -->
-        <a href="./dataForm.html"> Get a guide </a>
-        <!--  Our whole work will be in this page -->
+        <ul id="nav">
+          <li class="brand-name"><a href="./index.html">PRO GYM</a></li>
+          <li class="nav-item"><a href="./dataForm.html">Diet Advice</a></li>
+          <ul class="nav-right">
+            <li><a href="">Login</a></li>
+            <li><a href="">Sign Up</a></li>
+            <li><a href="./guide.html">Guide</a></li>
+          </ul>
+        </ul>
       </nav>
     </header>
     <main>
-      <video width="1200" height="480" controls>
-        <source src="https://bit.ly/3bNaGyE" type="video/mp4" />
+      <video width="1536" height="520" controls>
+        <source src="https://bit.ly/38Yi4pb" type="video/mp4" />
       </video>
+      <nav style="background-color: darkgray">
+        <ul>
+          <li style="display: inline">
+            <img src="../image/areej.png" width="150" height="100" />Areej Obaid
+          </li>
+          <li style="display: inline">
+            <img src="../image/elias.png" width="150" height="100" />Elias
+            Dadoush
+          </li>
+          <li style="display: inline">
+            <img src="../image/odai.png" width="150" height="100" />Odai Qudah
+          </li>
+          <li style="display: inline">
+            <img src="../image/yahya.png" width="150" height="100" />Yahya Omari
+          </li>
+          <li style="display: inline">
+            <img src="../image/ammar.png" width="150" height="100" />Ammar
+            Ibraheem
+          </li>
+          <li style="display: inline">
+            <img src="../image/mhmd.png" width="150" height="100" />Mohamed Omar
+          </li>
+        </ul>
+      </nav>
     </main>
 
     <footer>
-      <nav>
-        <a href="./AbouUs.html">About us</a>
-      </nav>
+      <ul id="aboutUs">
+        <li><a href="./AbouUs.html">About Us</a></li>
+      </ul>
+      <ul class="move-right">
+        <li>Phone Number: 9358590823</li>
+        <li>Email : whatever@gmail.com</li>
+      </ul>
     </footer>
   </body>
 </html>
