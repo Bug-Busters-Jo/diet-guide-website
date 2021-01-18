@@ -2,6 +2,22 @@ header{
     display:block;
     /* margin-bottom: 1.5em; */
 }
+nav{
+    position:relative;
+}
+#nav{
+    /* padding:10px; */
+}
+
+/* #imageDiv{
+    margin-top: -13%;
+} */
+#nav .brand-name{
+    background: url(../image/logo_transparent_trimmedPic.png);
+    background-repeat: no-repeat;
+    background-size: 200px 100%;
+    width: 200px;
+}
 #heading{
     position:absolute;
     width:100%;
@@ -70,7 +86,6 @@ header{
 }
 .nav-right{
     float:right;
-    transform: translateY(12.5%);
     font-size: 18px
 }
 .move-right{

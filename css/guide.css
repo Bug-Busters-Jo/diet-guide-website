@@ -1,7 +1,7 @@
 * { 
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     
   } 
   
@@ -9,8 +9,65 @@
 /* /////////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////style the header/////////////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////////////// */
+header{
+    display:block;
+    /* margin-bottom: 1.5em; */
+}
+nav{
+    position:relative;
+}
+#nav{
+    /* padding:10px; */
+}
 
-.header {
+/* #imageDiv{
+    margin-top: -13%;
+} */
+#nav .brand-name{
+    background: url(../image/logo_transparent_trimmedPic.png);
+    background-repeat: no-repeat;
+    background-size: 200px 100%;
+    width: 200px;
+}
+#heading{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    top:40%;
+    z-index:1;
+    font-size: 2em;
+}
+#heading h1{
+    width: 38%;
+    background: whitesmoke;
+    color: #843a23;
+    margin: 0 auto;
+    text-align: center;
+}
+#nav, footer{
+  background:#1b1a1a;
+}
+#nav li, footer ul{
+  display:inline-block;
+  padding:20px;
+  vertical-align: middle;
+}
+#nav li a, .nav-right, footer ul a{
+  text-decoration: none;
+  color: gray;
+}
+.nav-right{
+  float:right;
+  font-size: 18px
+}
+.brand-name{
+  font-size: 2em;
+  font-style:italic;
+}
+.nav-item{
+  font-size:18px;
+}
+/* .header {
     overflow: hidden;
     background-color: #333;
     padding: 7px 10px;
@@ -57,29 +114,41 @@
     .header-right {
       float: none;
     }
-  }
+  } */
+  /* main */
   main{
     margin-left: 1%;
-
+    font-size:25px;
+    padding: 20px 0;
   }
   .intro{
-    margin-top: -12%;
-    margin-left: 1%;
+    /* margin-top: -12%;
+    margin-left: 1%; */
+  }
+  .intro div ul{
+    margin-left: 20px;
   }
   .wrapper{
-    position: absolute; 
-    top: 64%;
-    transform: translateY(-50%);
+    /* position: absolute; 
+    top: 64%; */
+    transform: translateY(50%);
     width: 100%;
-    padding: 0 20px;
-     margin-left: -29%;
+    /* padding: 0 20px; */
+    display:inline-block
+     /* margin-left: -29%; */
 }
+.bmi-calculator{
+  font-size: 50px;
+  transform: translateY(35px);
+}
+
 .content-form{
+  font-size: 20px;
     max-width: 550px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background: rgb(0, 0,0,0.8);
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.13) ;
 }
@@ -127,13 +196,25 @@ width: 100%;
 label{
     color: white;
 }
-
+form input{ 
+  border-radius: 10px;
+  padding:2px 7px;
+}
 .ruslt{
-    margin-top: -5%;
+    /* margin-top: -5%; */
 }
 .transform{
-   margin-left: 45%;
-    margin-top: -38px;
+  position:relative;
+  height:400px;
+   /* margin-left: 45%;
+    margin-top: -38px; */
+}
+.move-image-right{
+  position: absolute;
+  transform: translateY(-15%);
+  z-index: -1;
+  top: 0;
+  left: 50%;
 }
 .rusltValue{
     /* overflow: hidden; */
