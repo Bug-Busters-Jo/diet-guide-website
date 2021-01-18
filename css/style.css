@@ -2,6 +2,22 @@ header{
     display:block;
     /* margin-bottom: 1.5em; */
 }
+nav{
+    position:relative;
+}
+#nav{
+    /* padding:10px; */
+}
+
+/* #imageDiv{
+    margin-top: -13%;
+} */
+#nav .brand-name{
+    background: url(../image/logo_transparent_trimmedPic.png);
+    background-repeat: no-repeat;
+    background-size: 200px 100%;
+    width: 200px;
+}
 #heading{
     position:absolute;
     width:100%;
@@ -16,6 +32,29 @@ header{
     color: #843a23;
     margin: 0 auto;
     text-align: center;
+}
+#nav, footer{
+  background:#1b1a1a;
+}
+#nav li, footer ul{
+  display:inline-block;
+  padding:20px;
+  vertical-align: middle;
+}
+#nav li a, .nav-right, footer ul a{
+  text-decoration: none;
+  color: gray;
+}
+.nav-right{
+  float:right;
+  font-size: 18px
+}
+.brand-name{
+  font-size: 2em;
+  font-style:italic;
+}
+.nav-item{
+  font-size:18px;
 }
 #getGuideBtn{
     /* background:#634343; */
@@ -59,20 +98,7 @@ header{
 #nav, footer{
     background:#1b1a1a;
 }
-#nav li, footer ul{
-    display:inline-block;
-    padding:20px;
-    vertical-align: middle;
-}
-#nav li a, .nav-right, footer ul a{
-    text-decoration: none;
-    color: gray;
-}
-.nav-right{
-    float:right;
-    transform: translateY(12.5%);
-    font-size: 18px
-}
+
 .move-right{
     position:relative;
     color:gray;
@@ -101,13 +127,6 @@ header{
     width:75%;
     margin:20px auto;
     text-indent: 30px;
-}
-.brand-name{
-    font-size: 2em;
-    font-style:italic;
-}
-.nav-item{
-    font-size:18px;
 }
 .slideshow{
     width:100%;
