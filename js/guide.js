@@ -5,10 +5,12 @@ let divEdit = document.getElementById('edit-div');
 let isMached;
 var userDate;
 var ruslt=document.getElementById('ruslt');
+
 window.onload = function(){
     userDate = localStorage.getItem('logedUser');
     var userDiv = document.getElementById('with-account');
     var noAccount = document.getElementById('no-account');
+    console.log(userDiv,noAccount,'div');
     if(userDate != null){
         isMached = true;
         userDiv.style.display = 'block'
@@ -20,7 +22,9 @@ window.onload = function(){
         document.getElementById('name').textContent = userDate.name;
         document.getElementById('email').textContent = userDate.email;
         document.getElementById('mobile').textContent = userDate.mobile;
+        document.getElementById('submit-accoumt').style.display = "block";
     }else{
+        document.getElementById('submit-accoumt').style.display = "none";
         userDiv.style.display = 'none';
         noAccount.style.display = 'block';
     }
