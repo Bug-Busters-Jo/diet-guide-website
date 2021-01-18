@@ -48,6 +48,51 @@
         </section>
 
         <section>
+            <table id = 'table'>
+                <thead>
+                    <tr>
+                        <th>Weight</th>
+                        <th>Height</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id='waight'></td>
+                        <td id='height'></td>
+                        <td id='name'></td>
+                        <td id='email'></td>
+                        <td id="mobile"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class = "edit-button" id="edit-botton" onclick="updateTheDate()">Edit Profile</button>
+                <div class = "edit-form-div" id = 'edit-div'>
+                    <fieldset>
+                        <form class = "edit-form" id='edit-form'>
+                            <div>
+                                <h1>Update Data</h1>
+                                <hr>
+                                <div id="waight-div">
+                                    <label for="waight"><b>Weight</b></label>
+                                    <input id='waight-input' type="number" placeholder="waight" name="waight" step="any"> 
+                                </div>
+                                <div id = "height-div">
+                                    <label for="height"><b>Height</b></label>
+                                    <input id = 'height-input' type="number" placeholder="height" name="height" step="any">
+                                </div>
+                                <div>
+                                    <input class = "update-button" type="submit" value="Submit">
+                                    <button class = "update-button" onclick="hideForm()">Hide Form</button>
+                                </div>
+                            </div>
+                        </form>
+                    </fieldset>
+                   
+                    
+                </div>
             <div style="    margin-top: 1%;    margin-left: 4px; font-size: 20px;">
                 <h1 class = "bmi-calculator">BMI Calculater </h1>
             </div>
@@ -76,42 +121,8 @@
             <img class = "move-image-right" src="../image/TRANSFORM.gif" alt="" width="400px" height="500px">
         </div>
         <section>
-            <div id = 'with-account'>
-                <h3>Weight: <p id='waight'></p>
-                </h3>
-                <h3>Height: <p id='height'></p>
-                </h3>
-                <h3>Name: <p id='name'></p>
-                </h3>
-                <h3>Email: <p id='email'></p>
-                </h3>
-                <h3>Mobile: <p id="mobile"></p>
-                </h3>
-
-                <button id="edit-botton" onclick="updateTheDate()">Edit Profile</button>
-                <div id = 'edit-div'>
-                    <fieldset>
-                        <form id='edit-form'>
-                            <div>
-                                <h1>Update Data</h1>
-                                <hr>
-                                <div id="waight-div">
-                                    <label for="waight"><b>Weight</b></label>
-                                    <input id='waight-input' type="number" placeholder="waight" name="waight" step="any"> 
-                                </div>
-                                <div id = "height-div">
-                                    <label for="height"><b>Height</b></label>
-                                    <input id = 'height-input' type="number" placeholder="height" name="height" step="any">
-                                </div>
-                                <div>
-                                    <input type="submit" value="Submit">
-                                </div>
-                            </div>
-                        </form>
-                    </fieldset>
-                   
-                    <button onclick="hideForm()">Hide Form</button>
-                </div>
+            
+                
     
             </div>
         </section>

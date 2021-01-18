@@ -5,15 +5,16 @@ let divEdit = document.getElementById('edit-div');
 let isMached;
 var userDate;
 var ruslt=document.getElementById('ruslt');
+var editButton = document.getElementById("edit-botton")
 
 window.onload = function(){
     userDate = localStorage.getItem('logedUser');
-    var userDiv = document.getElementById('with-account');
+    var table = document.getElementById('table');
     var noAccount = document.getElementById('no-account');
-    console.log(userDiv,noAccount,'div');
+    console.log(table,noAccount,'div');
     if(userDate != null){
         isMached = true;
-        userDiv.style.display = 'block'
+        table.style.display = 'block'
         divEdit.style.display = 'none';
         noAccount.style.display = 'none';
         userDate = JSON.parse(userDate);
@@ -25,8 +26,10 @@ window.onload = function(){
         document.getElementById('submit-accoumt').style.display = "block";
     }else{
         document.getElementById('submit-accoumt').style.display = "none";
-        userDiv.style.display = 'none';
+        table.style.display = 'none';
+        divEdit.style.display = "none";
         noAccount.style.display = 'block';
+        editButton.style.display = "none";
     }
 }
 
@@ -68,7 +71,7 @@ function editData(event){
 function hideForm(){
     divEdit.style.display = 'none';
     document.getElementById('edit-botton').style.display = 'block';
-    document.getElementById('edit-botton').style.margin = 'auto';
+    // document.getElementById('edit-botton').style.margin = 'auto';
 }
 function repPassword(){
     let password = document.getElementById('psw-input').value;
