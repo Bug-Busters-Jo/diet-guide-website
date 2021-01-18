@@ -1,0 +1,145 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  } 
+  
+  
+/* /////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////style the header/////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.header {
+    overflow: hidden;
+    background-color: #333;
+    padding: 7px 10px;
+    
+  }
+  
+  .header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header div.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .logoPos{
+    margin-top: -18%;
+
+  }
+  
+  .header a.active {
+    background-color: #b2ebf9;
+    color: #333;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+  main{
+    margin-left: 1%;
+
+  }
+  .intro{
+    margin-top: -12%;
+    margin-left: 1%;
+  }
+  .wrapper{
+    position: absolute; 
+    top: 64%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+     margin-left: -29%;
+}
+.content-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgb(0, 0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.13) ;
+}
+.input-filed{
+    display: flex;
+    flex-direction: column;
+    margin-right:4% ;
+}
+.input-filed .input,.msg{
+      width: 48%;}
+.input-filed .input{
+margin: 10px 0;
+border:0;
+border-bottom: 2px solid #c5ecfd;
+color: #000000;
+width: 100%;
+}
+.input-filed{
+    color: black;
+    /* margin-left: 1%; */
+}
+.msg{
+    height: 35px;
+}
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+
+.btn{
+   background: #b2ebf9;
+   text-align: center;
+   padding: 15px;
+   border-radius: 5px;
+   color: black;
+   cursor: pointer;
+   text-transform: uppercase; 
+}
+
+label{
+    color: white;
+}
+
+.ruslt{
+    margin-top: -5%;
+}
+.transform{
+   margin-left: 45%;
+    margin-top: -38px;
+}
+.rusltValue{
+    /* overflow: hidden; */
+    background-color: #ffc32c;
+    
+    padding: 7px 10px;
+    margin-left: 0%;
+    margin-right: 66%;
+}
