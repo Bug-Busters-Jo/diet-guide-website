@@ -7,10 +7,6 @@ html,body{
     bottom:0;
     width:100%;
 }
-header{
-    display:block;
-    /* margin-bottom: 1.5em; */
-}
 header nav{
     /* position: relative; */
     position:fixed;
