@@ -5,28 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>guide</title>
-    <link rel="stylesheet" href="guide.css">
+    <link rel="stylesheet" href="../css/guide.css">
 </head>
 
 <body>
     <header>
-        <div>
-            <div class="header">
-          
-              <div class="header-right">
-                <a class="active" href="#home">Home</a>
-                <a href="sales.html">Get a Guide</a>
-                <a href="sales.html">Diet Advice </a>
-                <a href="sales.html"> About us</a>
-  
-  
-              </div>
-            </div>
-            <div class="logoPos"><img class="logo" src="../image/logo_transparent.png" width="500px" height="430px" alt=""></div>
-          </div>
-
-      
-        
+        <nav>
+            <ul id = "nav">
+                <a href = "./index.html"><li class = "brand-name"></li></a>
+                <li class = "nav-item"><a href="./dataForm.html">Diet Advice</a></li>
+                <ul class = "nav-right">
+                    <li><a href="">Login</a> </li>
+                    <li><a href="">Sign Up</a> </li>
+                    <li ><a href="./guide.html">Guide</a></li>
+                </ul>
+                
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="intro">
@@ -51,18 +46,35 @@
         </section>
 
         <section>
-            <div style="    margin-top: 1%;    margin-left: 4px;">
-                <h1>BMI Calculater </h1>
+            <div style="    margin-top: 1%;    margin-left: 4px; font-size: 20px;">
+                <h1 class = "bmi-calculator">BMI Calculater </h1>
             </div>
         </section>
         <div class="transform">
-            <img src="../image/TRANSFORM.gif" alt="" width="350px" height="350px">
+            <div class="wrapper">
+                <div class="content-form">
+                    
+                         <div id = 'no-account' class="input-filed">
+                             <form >
+                                 <label>Weight: </label>
+                                 <input type='number' id = "input-weight-no-account" step="any" class="input" placeholder="waight (Kg):">
+                                 <label> Height: </label>
+                                 <input type='number'  id = "input-haight-no-account" step="any" class="input" placeholder=" height (Cm): ">
+                             </form>
+                             <div class="msg">
+                                 <button class="btn" onclick="calcolations()" >submit</button>
+                             </div>
+                             
+                         </div>
+                </div>
+             </div>
+            <img class = "move-image-right" src="../image/TRANSFORM.gif" alt="" width="400px" height="500px">
         </div>
         <section>
             <div id = 'with-account'>
-                <h3>Waight: <p id='waight'></p>
+                <h3>Weight: <p id='waight'></p>
                 </h3>
-                <h3>height: <p id='height'></p>
+                <h3>Height: <p id='height'></p>
                 </h3>
                 <h3>Name: <p id='name'></p>
                 </h3>
@@ -79,7 +91,7 @@
                                 <h1>Update Data</h1>
                                 <hr>
                                 <div id="waight-div">
-                                    <label for="waight"><b>Waight</b></label>
+                                    <label for="waight"><b>Weight</b></label>
                                     <input id='waight-input' type="number" placeholder="waight" name="waight" step="any"> 
                                 </div>
                                 <div id = "height-div">
@@ -99,7 +111,7 @@
             </div>
             
 
-           <div class="wrapper">
+           <!-- <div class="wrapper">
                <div class="content-form">
                    
                         <div id = 'no-account' class="input-filed">
@@ -115,14 +127,14 @@
                             
                         </div>
                </div>
-           </div>
+            </div> -->
 
            
         </section>
 
 
         <section >
-            <h2 class="ruslt" >Ruslt</h2>
+            <h2 class="ruslt" >Result</h2>
             <p id="ruslt" class="rusltValue"></p>
             
                 <h3>Here we offer you the exercises we recommend based on your BMI value</h3>
@@ -213,9 +225,8 @@
                 
                 <div id="idealwightExce" style="display: none;">
                     <h2>Nice, keep going </h2>
-                    <h3>here is some tips  for build muscle :</h3>
-                 <h1>At-home workout routine
-                </h1>
+                    <h3>Here is some tips for build muscle :</h3>
+                 <h1>At-home workout routine</h1>
                 <p>
                     Whether you’re a seasoned expert or new to strength training, working out at home is a great option when you can’t get to the gym or need a change of pace. <br>
 
@@ -273,7 +284,7 @@
                     
                 </ul>
                 <img src="../image/9.gif" alt="">
-
+               
 
                 </div>
 
@@ -281,13 +292,187 @@
 
 
 
-                <div id="overwightExce" style="display: none;">
-                    <h1>underwightExce </h1>
-                    <p>shot</p>
+                <div id="overwightExce" style="display: none;" class="para"> 
+                    <h1>How to Start a Workout Routine If You're Overweight </h1>
+                    <p>
+                        Starting a new workout routine is hard for everyone, but it can be especially hard if you are overweight or obese. The best types of exercise for obese people aren't always available at your local gym or fitness studio, and putting together a program on your own can be both uncomfortable and confusing.<br>
+                    </p>
+
+                    <p>  
+                        But if you are heavy, exercise is important. Workouts will help you to lose weight, can help you to change the way you feel about yourself, boost your mood, and improve your health. So how do you get started? Use this guide to choose a workout that you might enjoy. Then check your local community center, hospital, health club, or neighborhood center to find an exercise program to suit your needs.<br>
+                    </p>
+
+
+
+
+
+                    <h2>
+                        How to start exercising when you’re overweight                                       
+                    </h2>
+
+                    <p>
+                        Exercising regularly can be an effective way to lose weight and keep your weight under control. But starting a new workout routine when you’re overweight can be hard, especially if you haven’t been active for a while. Focusing on the benefits of exercise can help motivate you to get started and keep going. Of course, always talk with your doctor before you start any exercise program.
+                    </p>
+
+
+                    <p>
+                        <b>Benefits of regular exercise</b> <br>
+
+                        When you’re out of shape, it’s hard to feel good about yourself. Worse, being overweight puts you at greater risk of developing health problems, including high blood pressure, heart disease, and type 2 diabetes. According to the American Heart Association, even a little weight loss can produce many health gains. In fact, if you’re overweight, losing just five to 10 pounds may help lower your blood pressure and reduce the strain on your heart.<br>
+                    </p>
+
+                    <p>
+                        Exercise can also improve your cholesterol. Physical activity raises your HDL cholesterol (or “good” cholesterol), while lowering your LDL cholesterol (or “bad” cholesterol). Plus, you’re more likely to get a good night’s sleep, which can improve your concentration and productivity.<br>
+                    </p>
+
+                    <p>
+                        Best of all, regular exercise makes you feel better. And that boosts your self-confidence.<br>
+                        <b>Make exercise a regular part of your daily routine</b> <br>
+                        Starting an exercise program doesn’t mean you have to join a gym or begin training for a half-marathon. First, check with your doctor to make sure you’re healthy enough to begin an exercise program. The easiest way to start exercising is to find ways to fit physical activity into your day: <br>
+                    </p>
+
+                        <ul>
+                            <li>Skip the elevator and take the stairs.</li>
+                            <li>Park far away from the entrance at the grocery store.</li>
+                            <li>Sit on an exercise ball at work to strengthen your core and back muscles.</li>
+                            <li>Go for a walk at lunch or after work.</li>
+                            <li>Use hand weights or resistance bands while you watch TV.</li>
+                            <li>Turn on some music and dance.</li>
+                        </ul>  
+
+
+                            <p>
+                                <b>Increase your activity to lose weight</b> <br>
+                                If your doctor recommends that you lose weight, it’s time to get moving. It won’t be long before you find that the benefits of regular exercise are well worth the effort. To get started exercising, follow a few simple tips:
+                            </p>
+
+                                <ul>
+                                    <li>Start slowly.       </li>
+                                </ul>
+                                        <p>
+                                            If you haven’t been active for a while, ease into your new exercise program and give your body time to adjust to the activity.
+                                        </p>
+                                    
+                                <ul>
+                                    <li>Do something you enjoy.</li>
+
+                                </ul>
+                                <p>
+                                    Take in the scenery as you walk or bike through a neighborhood park. Listen to podcasts while you use an elliptical machine.
+
+                                </p>
+                                <ul>
+                                    <li>Exercise with a buddy</li>
+
+                                </ul>
+                                <p>
+                                    Connecting with others can keep you motivated to exercise more.
+
+                                </p>
+                                <ul>
+                                    <li>Stay hydrated.</li>
+                                </ul>
+                                <p>
+                                    Drink plenty of water before, during, and after you exercise.
+
+                                </p>
+                                <ul>
+                                    <li>Change your workout routine from time to time. </li>
+                                </ul>
+                                <p>
+                                    A variety of physical activities helps you stay motivated and prevents boredom.
+                                </p>
+                                <ul>
+                                    <li>Wear a fitness tracker.    </li>
+                                </ul>
+                                <p>
+                                    Health apps and fitness trackers can help you set goals. Keeping track of your progress can be motivating.
+
+                                </p>
+   
+
+                            <h2>How much exercise do you need?</h2>
+                            <p>
+                                The U.S. Department of Health and Human Services recommends that most healthy adults get at least 150 minutes of moderate aerobic exercise a week, along with strength training at least two days a week and flexibility and stretching exercises. If you’re overweight, focus on activities that put minimal stress on your joints, like walking, swimming, or water exercises.
+
+                            </p>
+                            <p>
+                                If the idea of 150 minutes of exercise every week sounds daunting, break your workout routine into smaller chunks. Your goal should be to get 30 minutes of exercise a day, five days a week. But you don’t have to get all 30 minutes of exercise at the same time. You can work out for 10 minutes at a time and still realize the benefits.
+                            </p>
+                            <p>
+                                When you’re working out, stop if you ever experience chest pain, shortness of breath, nausea, pain in the neck or jaw, or muscle or joint pain.
+
+                            </p>
+
+
+                  
                 </div>
+
                 <div id="obsitywightExce" style="display: none;">
-                    <h1>underwightExce </h1>
-                    <p> wow</p>
+                    <h2>How much exercise do you need?</h2>
+                    <br>
+                    <article>
+                        <p> We recommend at least 150 minutes every week of moderate exercise, or 75 minutes every week of vigorous exercise. That can be broken down into 30 minutes of exercise, five days a week. <br>
+
+                            For an overweight beginner, that can seem like a lot. But it’s important that you see this recommendation as a goal to which you can work. If you’re physically unable to complete 30 minutes of exercise this week, do what you can, and build toward 30 minutes daily over time. In fact, three bouts of 10 minutes of exercise a day adds up to the same calorie expenditure as a continuous 30 minutes.<br>
+                            
+                            In the beginning, it doesn’t even matter if your exercise sessions are so short that they aren’t contributing significantly to calories burned. All that matters in the beginning is that you’re doing what you’re capable of doing. That’s how to begin preparing your body for longer workout sessions in the future.
+                            <br>
+                            You’ll still experience the benefits of fitness if you break those 30 minutes into two or three groups of 10 to 15 minutes throughout the course of the day. When you begin, don’t allow yourself to get hung up on the clock. Instead, focus on picking an activity that you enjoy and that can fit into your schedule at least three to five days a week.
+                            <br>
+                            To increase your chances of successfully sticking to your program, try to schedule it for the same time each day, such as in the morning or right after work. The idea is to repeat the behavior until it becomes a habit.
+                        </p> <br>
+                    </article>
+                    <img src="../image/Jogging.gif" alt="">
+                    <article>
+                        <p>
+                            While we mentioned activities like <b>climbing stairs and jogging</b>, one of the easiest and most effective ways to ease into a healthier lifestyle is to begin walking.
+                            <br>
+                            Not only is it free, it’s a low-impact exercise that you can do nearly anywhere, inside or out. For morbidly obese people, walking may be difficult. But it’s doable with assistance. Even walking slowly will burn additional calories when you’re carrying extra weight, because you’re exerting more energy to move your body.
+                        </p> <br>
+                    </article>
+                    <img src="../image/Interval-training.gif" alt="">
+                    <article>
+                        <p>
+                            Interval training, more commonly known as high-intensity interval training (HIIT), is a broad term that refers to short bursts of intense exercise that alternate with recovery periods.
+                            <br>
+                            Typically, a HIIT workout lasts 10–30 minutes and can burn a lot of calories.
+                            <br>
+                            One study in 9 active men found that HIIT burned 25–30% more calories per minute than other types of exercises, including weight training, cycling, and running on a treadmill.
+                            <br>
+                            That means HIIT can help you burn more calories while spending less time exercising.
+                            <br>
+                            Furthermore, numerous studies have shown that HIIT is especially effective at burning belly fat, which is linked to many chronic diseases.
+                            <br>
+                            HIIT is easy to incorporate into your exercise routine. All you need to do is choose a type of exercise, such as running, jumping, or biking, and your exercise and rest times.
+                            <br>
+                            For example, pedal as hard as you can on a bike for 30 seconds followed by pedaling at a slow pace for 1–2 minutes. Repeat this pattern for 10–30 minutes.
+                            <br>
+                            <b>Interval training </b> is an effective weight loss strategy that can be applied to many types of
+                            exercises, including running, jumping, biking, and more. Incorporating interval
+                            training into your routine can help you burn more calories in less time.
+                        </p><br>
+                    </article>
+                    <img src="../image/biking.gif" alt="">
+                    <article>
+                        <p>
+                            The seated, stationary bike — also known as the <b>recumbent bike</b> — has a backrest that makes it a good choice for obese people.
+                            <br>
+                            Some obese people lack a strong abdominal core, which makes it difficult to sit on an upright stationary bike. Seated bikes are also less stressful on the lower spine, which is a common complaint for people carrying extra weight.
+                            <br>
+                            Incorporating both walking and riding the seated stationary bike is a good way to target different muscles in the lower body.
+                        </p> <br>
+                    </article>
+                    <nav>
+                        <h2>Tips for success</h2>
+                        <ul>
+                            <li>Recognize that living a healthy lifestyle is a skill and a habit, so approach your goals for health and fitness like you would any other new skill you want to master. You want to make positive changes to your lifestyle that will last indefinitely and that may take some trial and error, as well as commitment.</li>
+                            <li>Keep track of your activities to continue building positive habits.</li>
+                            <li>Build a support network of friends, family, or coworkers. It’s more fun to work out with a friend and you’ll have the benefit of accountability too.</li>
+                            
+                        </ul>
+                    </nav>
+
                 </div>
 
             
