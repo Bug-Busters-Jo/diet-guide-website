@@ -21,12 +21,34 @@ input{
 #swetch-page{
     right: -40px;
     position: relative;
-    top: -41px;
+    top: -48px;
     position: relative;
+    padding:5px;
+    font-weight: 700;
+    border: solid 0.3px;
+    border-radius: 3px;
 }
 #submitting{
     position: relative;
     border: solid 0.3px;
     border-radius: 3px;
     right: 60px;
+    padding: 5px;
+    font-weight: 700;    
+}
+
+label{
+    color: #202124;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3333;
+}
+
+#logIn-UP{
+    color: #202124;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
 }
