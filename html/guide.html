@@ -5,11 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>guide</title>
+    <link rel="stylesheet" href="guide.css">
 </head>
 
 <body>
     <header>
-        <section>
+        <div>
+            <div class="header">
+          
+              <div class="header-right">
+                <a class="active" href="#home">Home</a>
+                <a href="sales.html">Get a Guide</a>
+                <a href="sales.html">Diet Advice </a>
+                <a href="sales.html"> About us</a>
+  
+  
+              </div>
+            </div>
+            <div class="logoPos"><img class="logo" src="../image/logo_transparent.png" width="500px" height="430px" alt=""></div>
+          </div>
+
+      
+        
+    </header>
+    <main>
+        <section class="intro">
             <div>
                 <h1>
                     Body mass index (BMI) 
@@ -29,13 +49,15 @@
                 </ul>
             </div>
         </section>
-    </header>
-    <main>
+
         <section>
-            <div>
+            <div style="    margin-top: 1%;    margin-left: 4px;">
                 <h1>BMI Calculater </h1>
             </div>
         </section>
+        <div class="transform">
+            <img src="../image/TRANSFORM.gif" alt="" width="350px" height="350px">
+        </div>
         <section>
             <div id = 'with-account'>
                 <h3>Waight: <p id='waight'></p>
@@ -48,42 +70,60 @@
                 </h3>
                 <h3>Mobile: <p id="mobile"></p>
                 </h3>
+
                 <button id="edit-botton" onclick="updateTheDate()">Edit Profile</button>
                 <div id = 'edit-div'>
-                    <form id='edit-form'>
-                        <div>
-                            <h1>Update Data</h1>
-                            <hr>
-                            <div id="waight-div">
-                                <label for="waight"><b>Waight</b></label>
-                                <input id='waight-input' type="number" placeholder="waight" name="waight" step="any"> 
-                            </div>
-                            <div id = "height-div">
-                                <label for="height"><b>Height</b></label>
-                                <input id = 'height-input' type="number" placeholder="height" name="height" step="any">
-                            </div>
+                    <fieldset>
+                        <form id='edit-form'>
                             <div>
-                                <input type="submit" value="Submit">
+                                <h1>Update Data</h1>
+                                <hr>
+                                <div id="waight-div">
+                                    <label for="waight"><b>Waight</b></label>
+                                    <input id='waight-input' type="number" placeholder="waight" name="waight" step="any"> 
+                                </div>
+                                <div id = "height-div">
+                                    <label for="height"><b>Height</b></label>
+                                    <input id = 'height-input' type="number" placeholder="height" name="height" step="any">
+                                </div>
+                                <div>
+                                    <input type="submit" value="Submit">
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </fieldset>
+                   
                     <button onclick="hideForm()">Hide Form</button>
                 </div>
     
             </div>
-           <div id = 'no-account'>
-               <form >
-                    <label>waight: </label>
-                    <input type='number' id = "input-weight-no-account" step="any">
-                    <label> height: </label>
-                    <input type='number'  id = "input-haight-no-account" step="any">
-               </form>
+            
+
+           <div class="wrapper">
+               <div class="content-form">
+                   
+                        <div id = 'no-account' class="input-filed">
+                            <form >
+                                <label>waight: </label>
+                                <input type='number' id = "input-weight-no-account" step="any" class="input" placeholder="waight (Kg):">
+                                <label> height: </label>
+                                <input type='number'  id = "input-haight-no-account" step="any" class="input" placeholder=" height (Cm): ">
+                            </form>
+                            <div class="msg">
+                                <button class="btn" onclick="calcolations()" >submit</button>
+                            </div>
+                            
+                        </div>
+               </div>
            </div>
-           <button onclick="calcolations()" >submit</button>
+
+           
         </section>
-        <section>
-            <h2>Ruslt</h2>
-            <p id="ruslt"></p>
+
+
+        <section >
+            <h2 class="ruslt" >Ruslt</h2>
+            <p id="ruslt" class="rusltValue"></p>
             
                 <h3>Here we offer you the exercises we recommend based on your BMI value</h3>
 
