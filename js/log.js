@@ -1,13 +1,15 @@
 
 "use strict"
 
-let isLogInPage = false;
+let isLogInPage;
 let AllUserArray = [];
 var logedUser;
 let isMached;
 
 window.onload = function (){
-    isMached = false;
+    isLogInPage = true
+    loginPage();
+    isMached = true;
     AllUserArray = localStorage.getItem('AllUserArray');
     document.getElementById('erorr-message').style.display = 'none';
     if(AllUserArray === null){
