@@ -22,7 +22,9 @@ window.onload = function(){
         document.getElementById('name').textContent = userDate.name;
         document.getElementById('email').textContent = userDate.email;
         document.getElementById('mobile').textContent = userDate.mobile;
+        document.getElementById('submit-accoumt').style.display = "block";
     }else{
+        document.getElementById('submit-accoumt').style.display = "none";
         userDiv.style.display = 'none';
         noAccount.style.display = 'block';
     }
