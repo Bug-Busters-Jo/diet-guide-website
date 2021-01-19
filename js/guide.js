@@ -1,5 +1,5 @@
 "use strict"
-
+​
 let form = document.getElementById('edit-form');
 let divEdit = document.getElementById('edit-div');
 let isMached;
@@ -9,13 +9,16 @@ var editButton = document.getElementById("edit-botton")
 function printResult(){
     window.print();   
 }
-
+​
+​
+​
 window.onload = function(){
     userDate = localStorage.getItem('logedUser');
     var table = document.getElementById('table');
     var noAccount = document.getElementById('no-account');
     console.log(table,noAccount,'div');
-
+    var loginLogout = document.getElementById('login-logout');
+​
     if(userDate != null){
         isMached = true;
         table.style.display = 'block'
@@ -28,24 +31,26 @@ window.onload = function(){
         document.getElementById('email').textContent = userDate.email;
         document.getElementById('mobile').textContent = userDate.mobile;
         document.getElementById('submit-accoumt').style.display = "block";
+        loginLogout.textContent = `${userDate.name} Log Out`
     }else{
         document.getElementById('submit-accoumt').style.display = "none";
         table.style.display = 'none';
         divEdit.style.display = "none";
         noAccount.style.display = 'block';
         editButton.style.display = "none";
+        loginLogout.textContent = 'Log In'
     }
 }
-
+​
 function updateTheDate(event){
     divEdit.style.display = 'block';
     document.getElementById('edit-botton').style.display = 'none';
     document.getElementById('waight-input').value = userDate.waigth;
     document.getElementById('height-input').value = userDate.height;
 }
-
+​
 form.addEventListener('submit',editData);
-
+​
 function editData(event){
     event.preventDefault();
     if(isMached == false){
@@ -71,7 +76,7 @@ function editData(event){
         }
     }
 }
-
+​
 function hideForm(){
     divEdit.style.display = 'none';
     document.getElementById('edit-botton').style.display = 'block';
@@ -88,7 +93,7 @@ function repPassword(){
         isMached = true;
     }
 }
-
+​
 function calcolations(event){
     var BWI;
     var x ;
@@ -102,12 +107,12 @@ function calcolations(event){
     idealwightExce.style.display="none";
     overwightExce.style.display="none";
     obsitywightExce.style.display="none";
-
+​
     if (userDate != null){
         x = Number(userDate.height);
         y  =  Number(userDate.waigth);
         console.log(x,y);
-
+​
     }else{
         x = Number(document.getElementById('input-haight-no-account').value);
         y = Number(document.getElementById('input-weight-no-account').value);
@@ -117,30 +122,44 @@ function calcolations(event){
         }
     }
     BWI = (y / ((x/100)*(x/100))).toFixed(1);
-
+​
     if(BWI<=18.5){
         var massage="the under-weight"
         console.log(massage)
         underwightExce.style.display="block";
         console.log(massage)
-
+​
     }
     else if(18.5<=BWI && BWI<=24.9){
         var massage=" ideal weight ";
         console.log(massage)
-
+​
         idealwightExce.style.display="block";
     }
     else if(25<=BWI && BWI<=29.9){
         var massage=" over-weight ";
        overwightExce.style.display="block";
-
+​
     }
     else if(30<=BWI){
         var massage=" obesity weight ";
         obsitywightExce.style.display="block";
-
+​
     }
     window.location.href='#the-results';
     ruslt.textContent='Your result is '+" "+BWI+"."+ " You are in "+" "+ massage +" "+"region."
+}
+​
+​
+function loginLogout(){
+    if(userDate == null){
+        window.location.href='dataForm.html';
+    }else{
+        let isConfirm = confirm('Are You Sure');
+        if(isConfirm){
+            localStorage.removeItem('logedUser');
+            alert('Done!');
+            window.location.href='index.html';
+        }
+    }
 }
