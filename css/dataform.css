@@ -31,9 +31,9 @@ p {
   margin-top: 20px;
 }
 #swetch-page {
-  right: -95px;
+  /* right: -95px;
   position: relative;
-  top: -57px;
+  top: -57px; */
   background-color: #544147;
   border: none;
   border-radius: 3px;
@@ -89,7 +89,7 @@ label {
   border-radius: 3px;
   font-style: normal;
   position: relative;
-  right: 85px;
+  /* right: 85px; */
   background-color: #544147;
   border: none;
   color: #fff;
