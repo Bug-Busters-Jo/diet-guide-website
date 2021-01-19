@@ -49,19 +49,15 @@ header nav {
   margin: 0 auto;
   text-align: center;
 }
-#nav,
-footer {
+#nav, footer {
   background: #1b1a1a;
 }
-#nav li,
-footer ul {
+#nav li, footer ul {
   display: inline-block;
   padding: 20px;
   vertical-align: middle;
 }
-#nav li a,
-.nav-right,
-footer ul a {
+#nav li a, .nav-right, footer ul a {
   text-decoration: none;
   color: gray;
   cursor: pointer;
@@ -116,8 +112,7 @@ footer ul a {
 #footer {
   position: relative;
 }
-#nav,
-footer {
+#nav, footer {
   background: #1b1a1a;
 }
 

@@ -125,3 +125,33 @@ body {
   main{
     min-height: 90%;
   }
+  
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#aboutUsFooter{
+  position:relative;
+}
+
+#nav, footer {
+  background: #1b1a1a;
+}
+#nav li, footer ul {
+  display: inline-block;
+  padding: 20px;
+  vertical-align: middle;
+}
+#nav li a, .nav-right, footer ul a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+}
+
+#footer {
+  position: relative;
+}
+#nav, footer {
+  background: #1b1a1a;
+}
