@@ -4,6 +4,9 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+header{
+    height:58px;
+}
 #dataMain {
     text-align: center;
 }
