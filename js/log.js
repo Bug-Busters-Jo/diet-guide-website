@@ -8,7 +8,6 @@ let isMached;
 
 window.onload = function (){
     isLogInPage = false;
-    loginPage();
     isMached = true;
     AllUserArray = localStorage.getItem('AllUserArray');
     document.getElementById('erorr-message').style.display = 'none';
@@ -18,13 +17,13 @@ window.onload = function (){
     }else{
         AllUserArray = JSON.parse(AllUserArray);
     };
-
     var loginLogout = document.getElementById('login-logout');
     if(userDate != null){
         loginLogout.textContent = `Log Out`
     }else{
         loginLogout.textContent = 'Log In'
     }
+    loginPage();
 }
 
 function loginPage(){
