@@ -216,7 +216,17 @@ form input {
   padding: 2px 7px;
 }
 .ruslt {
+  width: 160px;
+  display: inline;
   /* margin-top: -5%; */
+}
+.output-result-button{
+  padding: 12px;
+  background-color: #f7c633;
+  margin: 8px;
+  position: relative;
+  border-color: #ddae21;
+  top: -7px;
 }
 .transform {
   position: relative;
