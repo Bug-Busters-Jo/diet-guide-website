@@ -6,6 +6,9 @@ let isMached;
 var userDate;
 var ruslt=document.getElementById('ruslt');
 var editButton = document.getElementById("edit-botton")
+function printResult(){
+    window.print();   
+}
 
 window.onload = function(){
     userDate = localStorage.getItem('logedUser');

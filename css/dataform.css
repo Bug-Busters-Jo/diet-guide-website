@@ -50,6 +50,7 @@ label{
     font-size: 11pt;
     font-weight: 400;
     line-height: 1.3333;
+    font-weight: 500;
 }
 
 #logIn-UP{
@@ -61,8 +62,9 @@ label{
 }
 
 .inner-div{
-    text-align: left;
-    padding-left: 15%;
+    width: 70%;
+    margin: auto;
+    margin-top: 25px;
 }
 
 .input {
@@ -80,7 +82,7 @@ label{
     -moz-transition: all 2s;
     transition: all 0.2s;
     background-color: rgba(255, 255, 255, 0.363) ;
-    width: 190px;
+    width: 85%;
 }
 
 #submitting{
@@ -95,4 +97,5 @@ label{
    padding: 10px 10px;
    text-transform: uppercase;
    font-weight: normal;
+   margin-top: 10px;
 }
