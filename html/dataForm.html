@@ -26,47 +26,39 @@
       </nav>
   </header>
     <main id="dataMain">
-      <div class="owl">
-        <div class="hand"></div>
-        <div class="hand hand-r"></div>
-        <div class="arms">
-          <div class="arm"></div>
-          <div class="arm arm-r"></div>
-        </div>
-      </div>
       <section>
         <form id = 'log-form'>
           <div>
               <h1 id = 'logIn-UP'>Sign Up</h1>
               <hr>
-              <div id = 'email-div'>
+              <div id = 'email-div' class="inner-div">
                   <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email">
+                  <input class="input"  type="text" placeholder="Enter Email" name="email">
               </div>
-              <div id = 'email-name'>
+              <div id = 'email-name' class="inner-div">
                   <label for="name"><b>Name</b></label>
-                  <input type="text" placeholder="Enter name" name="name" required>
+                  <input class="input"  type="text" placeholder="Enter name" name="name" required>
               </div>
-              <div>
+              <div class="inner-div">
                   <label for="psw"><b>Password</b></label>
-                  <input id="psw-input"  type="password" placeholder="Enter Password" name="psw" required>
+                  <input class="input"  id="psw-input"  type="password" placeholder="Enter Password" name="psw" required>
               </div>
-              <div id = "psw-repeat-div">
+              <div id = "psw-repeat-div" class="inner-div">
                   <label for="pswRepeat"><b>Repeat Password</b></label>
-                  <input id="psw-repeat-input" type="password"  onfocusout ="repPassword()" placeholder="Repeat Password" name="pswRepeat" >
+                  <input class="input"  id="psw-repeat-input" type="password"  onfocusout ="repPassword()" placeholder="Repeat Password" name="pswRepeat" >
                   <p id='erorr-message' style="color: red;display: none;">The Repeat Password And The Password are Not Match!</p>
               </div>
-              <div id = "waight-div">
+              <div id = "waight-div"class="inner-div">
                   <label for="waight"><b>Weight</b></label>
-                  <input type="number" placeholder="weight" name="waight" >
+                  <input class="input"  type="number" placeholder="weight" name="waight" >
               </div>
-              <div id = "height-div">
+              <div id = "height-div" class="inner-div">
                   <label for="height"><b>Height</b></label>
-                  <input id='height-input' type="number" placeholder="height" name="height" >
+                  <input class="input"  id='height-input' type="number" placeholder="height" name="height" >
               </div>
-              <div  id = "mobile-div">
+              <div  id = "mobile-div" class="inner-div">
                   <label for="mobile"><b>Mobile</b></label>
-                  <input id='mobile-input' type="text" placeholder="mobile" name="mobile" >
+                  <input class="input" id='mobile-input' type="text" placeholder="mobile" name="mobile" >
               </div>
   
               <div>

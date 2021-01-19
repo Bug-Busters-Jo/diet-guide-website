@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pro GYM</title>
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
 <body>
-    <header>
-       
-        <nav>
-            
-            <ul id = "nav">
-                <a href = "./index.html"><li class = "brand-name"></li></a>
-                <li class = "nav-item"><a href="./dataForm.html">Diet Advice</a></li>
-                <ul class = "nav-right">
-                    <li><a id ='login-logout' onclick="loginLogout()">Login </a></li>
-                    <li ><a href="./guide.html">Guide</a></li>
-                </ul>
-                
-            </ul>
-        </nav>
-    </header>
-    <main id = "indexMain">
-        <div id = "heading">
-            <h1>WELCOME TO THE WEBSITE</h1>
-            <button id = "getGuideBtn"><span>Get Guide</span></button>
-        </div>
-        <ul class="slideshow">
-            <li></li>
-            <li></li>
-            <li></li>
+  <header>
+    <nav id="allNav">
+      <ul id="nav">
+        <a href="./index.html">
+          <li class="brand-name"></li>
+        </a>
+        <li class="nav-item"><a href="./dataForm.html">Diet Advice</a></li>
+        <ul class="nav-right">
+          <li><a id="login-logout" onclick="loginLogout()">Login </a></li>
+          <li><a href="./guide.html">Guide</a></li>
+        </ul>
       </ul>
-      <!-- <div id = "info">
+    </nav>
+  </header>
+  <main id="indexMain">
+    <div id="heading">
+      <h1>WELCOME TO PRO GYM</h1>
+      <button id="getGuideBtn">
+        <span><a style="color: aliceblue; text-decoration: none" href="./guide.html">
+            Get Guide</a></span>
+      </button>
+    </div>
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- <div id = "info">
             <p id = "description"></p>
         </div> -->
-      <div id="websiteDescription">
-        <h3>
-          WHAT WE'RE ABOUT
-          <p id="paraDescription">
-            The purpose of the website is to help a person with their diet
-            plans. Based on the input provided by the user, a guide is generated
-            to help the user succeed in his/her weight loss efforts or to advise
-            the user on how to gain muscles. It will be provide a step-by-step
-            guide on how to achieve the user's diet goals.
-          </p>
-        </h3>
-      </div>
-    </main>
-    <footer>
-      <ul id="aboutUs">
-        <li><a href="./AbouUs.html">About Us</a></li>
-      </ul>
-      <ul class="move-right">
-        <li>Phone Number: 9358590823</li>
-        <li>Email : whatever@gmail.com</li>
-      </ul>
-    </footer>
+    <div id="websiteDescription">
+      <h3>
+        WHAT WE'RE ABOUT
+        <p id="paraDescription">
+          The purpose of the website is to help a person with their diet
+          plans. Based on the input provided by the user, a guide is generated
+          to help the user succeed in his/her weight loss efforts or to advise
+          the user on how to gain muscles. It will be provide a step-by-step
+          guide on how to achieve the user's diet goals.
+        </p>
+      </h3>
+    </div>
+  </main>
+  <footer>
+    <ul id="aboutUs">
+      <li><a href="./AbouUs.html">About Us</a></li>
+    </ul>
+    <ul class="move-right">
+      <li>Phone Number: 9358590823</li>
+      <li>Email : whatever@gmail.com</li>
+    </ul>
+  </footer>
 
-    <script src="../js/app.js"></script>
-  </body>
+  <script src="../js/app.js"></script>
+</body>
+
 </html>

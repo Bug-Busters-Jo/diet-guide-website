@@ -133,6 +133,22 @@ nav{
   .intro div ul{
     margin-left: 20px;
   }
+  #table{
+    border-collapse:collapse;
+    margin-top:25px;
+  }
+  #table th, #table td {
+    border: 1px solid black;
+    padding: 20px;
+  }
+  #table tr th {
+    background: #b2ebf9;
+  }
+  #table tr td {
+    background: #1b1a1a;
+    color: white;
+    text-align:center;
+  }
   .wrapper{
     /* position: absolute; 
     top: 64%; */
@@ -187,7 +203,38 @@ width: 100%;
 ::-ms-input-placeholder{
     color: gray;
 }
+.edit-button{
+  background:#ffc32c;
+  text-align: center;
+  padding: 10px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase; 
+    color:black;
+    float:left;
+    margin-top:10px;
+}
+.edit-form-div{
+  width:35%;
+  margin:20px 0;
+  
+}
+.edit-form{
+  padding:20px;
+  background:#ffc32c;
 
+}
+.edit-form label{
+  color:black;
+  display: inline-block;
+  width: 85px;
+  
+}
+.update-button{
+  border-radius: 10px;
+  padding: 2px 7px;
+}
 .btn{
   background: #b2ebf9;
   text-align: center;

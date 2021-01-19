@@ -27,7 +27,8 @@ function loginPage(){
         document.getElementById("height-div").style.display = 'none';
         document.getElementById('email-div').style.display = 'none';
         document.getElementById('logIn-UP').textContent = "Log In";
-        document.getElementById('swetch-page').textContent = "Create Account";    
+        document.getElementById('swetch-page').textContent = "Create Account";   
+        document.getElementById('submitting').value = "Log In";   
         isLogInPage = true;
     }else{
         document.getElementById("mobile-div").style.display = 'block';
@@ -36,7 +37,9 @@ function loginPage(){
         document.getElementById("height-div").style.display = 'block';
         document.getElementById('email-div').style.display = 'block';
         document.getElementById('logIn-UP').textContent = "Sign Up";
-        document.getElementById('swetch-page').textContent = "I have Account";    
+        document.getElementById('swetch-page').textContent = "I have Account"; 
+        document.getElementById('submitting').value = "Sign Up";    
+   
         isLogInPage = false;
     }
 };
