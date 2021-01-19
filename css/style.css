@@ -18,6 +18,9 @@ header nav {
   top: 0;
   z-index: 10;
 }
+#aboutUsFooter{
+  position:relative;
+}
 #nav {
   /* padding:10px; */
 }
@@ -203,6 +206,7 @@ footer {
 section {
   position: relative;
   padding: 6.25%;
+  display: inline;
 }
 .form {
   border-radius: 5%;
