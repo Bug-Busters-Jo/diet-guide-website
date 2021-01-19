@@ -273,3 +273,21 @@ form input{
   float: right;
   list-style: none;
 }
+/* Flex */
+.make-flex{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.text,.image{
+  width:50%;
+  /* display:flex; */
+}
+
+.make-flex:nth-child(even)>.text{
+  order:2;
+}
+.float-right{
+  float:right;
+}
