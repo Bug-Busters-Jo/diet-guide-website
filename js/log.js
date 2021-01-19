@@ -8,24 +8,22 @@ let isMached;
 
 window.onload = function (){
     isLogInPage = false;
-    loginPage();
     isMached = true;
     AllUserArray = localStorage.getItem('AllUserArray');
     document.getElementById('erorr-message').style.display = 'none';
     var userDate = localStorage.getItem('logedUser');
-
     if(AllUserArray === null){
         AllUserArray = []
     }else{
         AllUserArray = JSON.parse(AllUserArray);
     };
-
     var loginLogout = document.getElementById('login-logout');
     if(userDate != null){
         loginLogout.textContent = `Log Out`
     }else{
         loginLogout.textContent = 'Log In'
     }
+    loginPage();
 }
 
 function loginPage(){
@@ -51,6 +49,7 @@ function loginPage(){
    
         isLogInPage = false;
     }
+    cleanInput()
 };
 
 function signUpPage (){
@@ -60,6 +59,7 @@ function signUpPage (){
     document.getElementById("height-div").style.display = 'block';
     document.getElementById('email-div').style.display = 'block';
     isLogInPage = false;
+    cleanInput();
 }
 
 let logForm = document.getElementById('log-form');
@@ -136,4 +136,14 @@ function loginLogout(){
             window.location.href='index.html';
         }
     }
+}
+
+function cleanInput(){
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('psw-input').value = '';
+    document.getElementById('psw-repeat-input').value = '';
+    document.getElementById('weight').value = '';
+    document.getElementById('height-input').value = '';
+    document.getElementById('mobile-input').value = '';
 }
