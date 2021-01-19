@@ -6,12 +6,19 @@ let isMached;
 var userDate;
 var ruslt=document.getElementById('ruslt');
 var editButton = document.getElementById("edit-botton")
+function printResult(){
+    window.print();   
+}
+
+
 
 window.onload = function(){
     userDate = localStorage.getItem('logedUser');
     var table = document.getElementById('table');
     var noAccount = document.getElementById('no-account');
     console.log(table,noAccount,'div');
+    var loginLogout = document.getElementById('login-logout');
+
     if(userDate != null){
         isMached = true;
         table.style.display = 'block'
@@ -24,12 +31,14 @@ window.onload = function(){
         document.getElementById('email').textContent = userDate.email;
         document.getElementById('mobile').textContent = userDate.mobile;
         document.getElementById('submit-accoumt').style.display = "block";
+        loginLogout.textContent = `${userDate.name} Log Out`
     }else{
         document.getElementById('submit-accoumt').style.display = "none";
         table.style.display = 'none';
         divEdit.style.display = "none";
         noAccount.style.display = 'block';
         editButton.style.display = "none";
+        loginLogout.textContent = 'Log In'
     }
 }
 
@@ -99,11 +108,6 @@ function calcolations(event){
     overwightExce.style.display="none";
     obsitywightExce.style.display="none";
 
-
-
-
-
-
     if (userDate != null){
         x = Number(userDate.height);
         y  =  Number(userDate.waigth);
@@ -112,7 +116,10 @@ function calcolations(event){
     }else{
         x = Number(document.getElementById('input-haight-no-account').value);
         y = Number(document.getElementById('input-weight-no-account').value);
-        console.log(x,y);
+        if(x == '' || y == ''){
+            alert('Enter The Required Fields');
+            return;
+        }
     }
     BWI = (y / ((x/100)*(x/100))).toFixed(1);
 
@@ -139,6 +146,20 @@ function calcolations(event){
         obsitywightExce.style.display="block";
 
     }
-    console.log(BWI);
+    window.location.href='#the-results';
     ruslt.textContent='Your result is '+" "+BWI+"."+ " You are in "+" "+ massage +" "+"region."
+}
+
+
+function loginLogout(){
+    if(userDate == null){
+        window.location.href='dataForm.html';
+    }else{
+        let isConfirm = confirm('Are You Sure');
+        if(isConfirm){
+            localStorage.removeItem('logedUser');
+            alert('Done!');
+            window.location.href='index.html';
+        }
+    }
 }
