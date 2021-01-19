@@ -5,6 +5,7 @@ let divEdit = document.getElementById('edit-div');
 let isMached;
 var userDate;
 var ruslt=document.getElementById('ruslt');
+var rusltID = '';
 var editButton = document.getElementById("edit-botton")
 function printResult(){
     window.print();   
@@ -12,6 +13,40 @@ function printResult(){
 
 
 
+function demoFromHTML() {
+    
+    if(rusltID == ''){
+        alert('No Result');
+        return;
+    }
+    var pdf = new jsPDF({
+        unit: 'pt'
+      });
+
+      var source = document.getElementById(rusltID);
+      var clone = source.cloneNode(true);
+      for(let i = 0 ; i < clone.getElementsByTagName("img").length ; i++){
+        clone.getElementsByTagName("img")[i].style.margin = 'auto';
+      };
+    var specialElementHandlers = {
+        '#elementH': function (element, renderer) {
+            return true;
+        }
+    };
+    pdf.text(0, 10, 'Non-utf-8-string' );
+    pdf.fromHTML(
+        clone, 
+        15, 
+        15, { 
+            'width': 550, 
+            'elementHandlers': specialElementHandlers
+        },
+
+        function (dispose) {
+            pdf.save('result.pdf');
+        }
+    );
+}
 window.onload = function(){
     userDate = localStorage.getItem('logedUser');
     var table = document.getElementById('table');
@@ -126,6 +161,7 @@ function calcolations(event){
     if(BWI<=18.5){
         var massage="the under-weight"
         console.log(massage)
+        rusltID = 'underwightExce';
         underwightExce.style.display="block";
         console.log(massage)
 
@@ -133,18 +169,18 @@ function calcolations(event){
     else if(18.5<=BWI && BWI<=24.9){
         var massage=" ideal weight ";
         console.log(massage)
-
+        rusltID = 'idealwightExce';
         idealwightExce.style.display="block";
     }
     else if(25<=BWI && BWI<=29.9){
         var massage=" over-weight ";
        overwightExce.style.display="block";
-
+       rusltID = 'overwightExce';
     }
     else if(30<=BWI){
         var massage=" obesity weight ";
         obsitywightExce.style.display="block";
-
+        rusltID = 'obsitywightExce';
     }
     window.location.href='#the-results';
     ruslt.textContent='Your result is '+" "+BWI+"."+ " You are in "+" "+ massage +" "+"region."
