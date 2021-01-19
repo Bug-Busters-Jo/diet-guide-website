@@ -16,8 +16,6 @@ function printResult() {
     window.print();
 }
 
-
-
 function demoFromHTML() {
     if (rusltID == '') {
         alert('No Result');
