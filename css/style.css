@@ -127,8 +127,10 @@ footer {
   transform: translateY(30%);
   float: right;
 }
-#aboutUs {
+#aboutUs li {
   font-size: 18px;
+  display: inline-block;
+  padding: 0 5px;
 }
 #websiteDescription {
   padding: 10%;
