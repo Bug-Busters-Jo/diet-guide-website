@@ -103,11 +103,6 @@ function calcolations(event){
     overwightExce.style.display="none";
     obsitywightExce.style.display="none";
 
-
-
-
-
-
     if (userDate != null){
         x = Number(userDate.height);
         y  =  Number(userDate.waigth);
@@ -116,7 +111,10 @@ function calcolations(event){
     }else{
         x = Number(document.getElementById('input-haight-no-account').value);
         y = Number(document.getElementById('input-weight-no-account').value);
-        console.log(x,y);
+        if(x == '' || y == ''){
+            alert('Enter The Required Fields');
+            return;
+        }
     }
     BWI = (y / ((x/100)*(x/100))).toFixed(1);
 
@@ -143,6 +141,6 @@ function calcolations(event){
         obsitywightExce.style.display="block";
 
     }
-    console.log(BWI);
+    window.location.href='#the-results';
     ruslt.textContent='Your result is '+" "+BWI+"."+ " You are in "+" "+ massage +" "+"region."
 }
