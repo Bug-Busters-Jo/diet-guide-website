@@ -179,7 +179,8 @@ main ol {
   text-transform: uppercase;
   color: black;
   float: left;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  margin: 20px;
 }
 .edit-form-div {
   width: 35%;
