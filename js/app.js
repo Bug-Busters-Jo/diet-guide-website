@@ -14,7 +14,7 @@ window.onload = function(){
     var loginLogout = document.getElementById('login-logout');
     if(userDate != null){
         userDate = JSON.parse(userDate);
-        loginLogout.textContent = `${userDate.name} Log Out`
+        loginLogout.textContent = ` Log Out`
     }else{
         loginLogout.textContent = 'Log In'
     }
@@ -24,10 +24,10 @@ function loginLogout(){
     if(userDate == null){
         window.location.href='dataForm.html';
     }else{
-        let isConfirm = confirm('Are You Sure');
+        let isConfirm = confirm('Are you sure you want to log out?');
         if(isConfirm){
             localStorage.removeItem('logedUser');
-            alert('Done!');
+            alert('You are logged out!');
             window.location.href='index.html';
         }
     }
