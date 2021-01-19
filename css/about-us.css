@@ -14,10 +14,22 @@ body {
 body{
   background-color: #131313;
 }
-.profile-card{
-  
+
+/* section div{
+   width: 100%;
+   display: inline-block;
+  margin-left: 40px;
   float: left;
-  margin-left: 3%;
+}
+.profile-card{
+ 
+} */
+.firstDiv, .secondDiv, #video{
+  display:flex;
+  width: 80%; 
+  
+ margin:50px auto;
+ /* float: left; */
 }
 header img {
   border-radius: 50%;
@@ -25,11 +37,10 @@ header img {
   display: block;
   width: 200px;
   border: 5px solid #fff;
-  transform: translate(-5px,-27px);
+  transform: translate(-5px,-25px);
 }
-video{
-  margin-left: 25%;
-  margin-top:20px;
+#video video{
+  margin:0 auto;
 }
 aside {
   border-top: 0px solid #26A69A;
