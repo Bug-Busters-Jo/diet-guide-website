@@ -6,15 +6,17 @@ let isMached;
 var userDate;
 var ruslt = document.getElementById('ruslt');
 var rusltID = '';
-var editButton = document.getElementById("edit-botton")
+var editButton = document.getElementById("edit-botton");
+
 function printResult() {
+    if (rusltID == '') {
+        alert('No Result');
+        return;
+    }
     window.print();
 }
 
-
-
 function demoFromHTML() {
-
     if (rusltID == '') {
         alert('No Result');
         return;
@@ -22,15 +24,8 @@ function demoFromHTML() {
     var pdf = new jsPDF({
         unit: 'pt'
     });
-
     var source = $(`#${rusltID}`).clone(true);
-    source.find("img").css("width", "200px");
-    source.css('float','left');
-    source.find('p').css('float','left');
-    source.find('h1').css('float','left');
-    source.find('div').css('float','left');
-    source.find('h2').css('float','left');
-    source.find('ul').css('float','left');
+    source.find("img").css("width", "250px");
 
     source = source.html();
     var specialElementHandlers = {
@@ -40,8 +35,8 @@ function demoFromHTML() {
     };
     pdf.fromHTML(
         source,
-        15,
-        15, {
+        20,
+        20, {
         'width': 550,
         'elementHandlers': specialElementHandlers
     },
