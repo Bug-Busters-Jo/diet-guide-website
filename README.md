@@ -28,12 +28,12 @@ It will be provide a step-by-step guide on how to achieve the user's diet goals.
 
 ### Problme Domain📝📝
 
-1- as a user I want to give my customers advise on how to improve my health so there should be a fourm to put data about my self to get a guiade,<br />
-2- as a user I want to see my data stored in the local storage so i can use it again and search for my customers by there names and see my results again,<br />
-3- as a user I want my customers to create an account,<br />
+1- As a user I want to give my customers advise on how to improve my health so there should be a fourm to put data about my self to get a guiade,<br />
+2- As a user I want to see my data stored in the local storage so i can use it again and search for my customers by there names and see my results again,<br />
+3- As a user I want my customers to create an account,<br />
 I want my customers to check there result any time after they create there account,<br />
-4- as a user I want to edit my profile if there is any changes<br />
-5- as a user I expect to see a wondefull shining web page.
+4- As a user I want to edit my profile if there is any changes<br />
+5- As a user I expect to see a wondefull shining web page.
 
 ---
 
@@ -55,10 +55,12 @@ Indication if the column is a key
 
 | First Header | Second Header                                                                   |
 | ------------ | ------------------------------------------------------------------------------- |
-| Login        | takes the name and passwrod saved on local storage                              |
-| Sign Up      | fill the name and password and re- password and tall and hight and phone number |
-| User Input   | Tall and Hight                                                                  |
+| Login        | Takes the name and passwrod saved on local storage                              |
+| Sign Up      | Fill the name and password and re- password and tall and hight and phone number |
+| User Input   | Tall and hight                                                                  |
 
 ## 👍
 
 [Wireframe](image/imagewireframe.png)
+
+[Go to the Web Site](/html/index.html)
