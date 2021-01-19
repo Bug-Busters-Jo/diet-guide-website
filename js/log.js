@@ -12,11 +12,20 @@ window.onload = function (){
     isMached = true;
     AllUserArray = localStorage.getItem('AllUserArray');
     document.getElementById('erorr-message').style.display = 'none';
+    var userDate = localStorage.getItem('logedUser');
+
     if(AllUserArray === null){
         AllUserArray = []
     }else{
         AllUserArray = JSON.parse(AllUserArray);
     };
+
+    var loginLogout = document.getElementById('login-logout');
+    if(userDate != null){
+        loginLogout.textContent = `${userDate.name} Log Out`
+    }else{
+        loginLogout.textContent = 'Log In'
+    }
 }
 
 function loginPage(){
@@ -111,6 +120,20 @@ function repPassword(){
         }else{
             document.getElementById('erorr-message').style.display = 'none';
             isMached = true;
+        }
+    }
+}
+
+
+function loginLogout(){
+    if(userDate == null){
+        window.location.href='dataForm.html';
+    }else{
+        let isConfirm = confirm('Are You Sure');
+        if(isConfirm){
+            localStorage.removeItem('logedUser');
+            alert('Done!');
+            window.location.href='index.html';
         }
     }
 }

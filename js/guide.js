@@ -10,11 +10,14 @@ function printResult(){
     window.print();   
 }
 
+
+
 window.onload = function(){
     userDate = localStorage.getItem('logedUser');
     var table = document.getElementById('table');
     var noAccount = document.getElementById('no-account');
     console.log(table,noAccount,'div');
+    var loginLogout = document.getElementById('login-logout');
 
     if(userDate != null){
         isMached = true;
@@ -28,12 +31,14 @@ window.onload = function(){
         document.getElementById('email').textContent = userDate.email;
         document.getElementById('mobile').textContent = userDate.mobile;
         document.getElementById('submit-accoumt').style.display = "block";
+        loginLogout.textContent = `${userDate.name} Log Out`
     }else{
         document.getElementById('submit-accoumt').style.display = "none";
         table.style.display = 'none';
         divEdit.style.display = "none";
         noAccount.style.display = 'block';
         editButton.style.display = "none";
+        loginLogout.textContent = 'Log In'
     }
 }
 
@@ -143,4 +148,18 @@ function calcolations(event){
     }
     window.location.href='#the-results';
     ruslt.textContent='Your result is '+" "+BWI+"."+ " You are in "+" "+ massage +" "+"region."
+}
+
+
+function loginLogout(){
+    if(userDate == null){
+        window.location.href='dataForm.html';
+    }else{
+        let isConfirm = confirm('Are You Sure');
+        if(isConfirm){
+            localStorage.removeItem('logedUser');
+            alert('Done!');
+            window.location.href='index.html';
+        }
+    }
 }
