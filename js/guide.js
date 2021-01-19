@@ -31,7 +31,7 @@ window.onload = function(){
         document.getElementById('email').textContent = userDate.email;
         document.getElementById('mobile').textContent = userDate.mobile;
         document.getElementById('submit-accoumt').style.display = "block";
-        loginLogout.textContent = `${userDate.name} Log Out`
+        loginLogout.textContent = ` Log Out`
     }else{
         document.getElementById('submit-accoumt').style.display = "none";
         table.style.display = 'none';
@@ -155,10 +155,10 @@ function loginLogout(){
     if(userDate == null){
         window.location.href='dataForm.html';
     }else{
-        let isConfirm = confirm('Are You Sure');
+        let isConfirm = confirm('Are you sure you want to log out?');
         if(isConfirm){
             localStorage.removeItem('logedUser');
-            alert('Done!');
+            alert('You are logged out!');
             window.location.href='index.html';
         }
     }
