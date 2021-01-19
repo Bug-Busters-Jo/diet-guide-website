@@ -1,104 +1,101 @@
-body{
-
-    background-image: url(https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80);
-    background-repeat: no-repeat;
-    background-size: 100%;
+body {
+  background-image: url(https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-header{
-    height:58px;
+header {
+  height: 58px;
 }
 #dataMain {
-    text-align: center;
+  text-align: center;
 }
-#log-form{
-    width: 35%;
-    border: 0.5px solid black;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    margin: auto;
-    border-radius: 7px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.76) ;
+#log-form {
+  width: 35%;
+  border: 0.5px solid black;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin: auto;
+  border-radius: 7px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.76);
 }
-div{
-    margin-top: 20px;
+div {
+  margin-top: 20px;
 }
-input{
-    margin-left: 10px;
-    border: none;
-    border-bottom: solid 0.3px;
-    font-style: italic;
+input {
+  margin-left: 10px;
+  border: none;
+  border-bottom: solid 0.3px;
+  font-style: italic;
 }
-p{
-    margin-top: 20px;
+p {
+  margin-top: 20px;
 }
-#swetch-page{
-    right: -53px;
-    position: relative;
-    top: -57px;
-    background-color: #544147;
-   border: none;
-   border-radius: 3px;
-   color: #fff;
-   font-size: .9em;
-   padding: 10px 10px;
-   text-transform: uppercase;
-   font-weight: normal;
-
-}
-
-
-label{
-    color: #202124;
-    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
-    font-size: 11pt;
-    font-weight: 400;
-    line-height: 1.3333;
-    font-weight: 510;
+#swetch-page {
+  right: -95px;
+  position: relative;
+  top: -57px;
+  background-color: #544147;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
-#logIn-UP{
-    color: #202124;
-    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.3333;
+label {
+  color: #202124;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 1.3333;
+  font-weight: 510;
 }
 
-.inner-div{
-    width: 70%;
-    margin: auto;
-    margin-top: 25px;
+#logIn-UP {
+  color: #202124;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3333;
+}
+
+.inner-div {
+  width: 70%;
+  margin: auto;
+  margin-top: 25px;
 }
 
 .input {
-    background-image: url(../image/icons8-droid-24.png);
-    background-position: 5px center;
-    background-repeat: no-repeat;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-    padding: 10px 5px 10px 20px;
-    text-indent: 20px;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 2s;
-    transition: all 0.2s;
-    background-color: rgba(255, 255, 255, 0.363) ;
-    width: 85%;
+  background-image: url(../image/icons8-droid-24.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px 5px 10px 20px;
+  text-indent: 20px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 2s;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.363);
+  width: 85%;
 }
 
-#submitting{
-    border-radius: 3px;
-    font-style: normal;
-    position: relative;
-    right: 85px;
-    background-color: #544147;
-   border: none;
-   color: #fff;
-   font-size: .9em;
-   padding: 10px 10px;
-   text-transform: uppercase;
-   font-weight: normal;
-   margin-top: 10px;
+#submitting {
+  border-radius: 3px;
+  font-style: normal;
+  position: relative;
+  right: 85px;
+  background-color: #544147;
+  border: none;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 10px;
 }
