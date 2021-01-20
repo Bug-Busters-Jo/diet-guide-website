@@ -1,5 +1,5 @@
 body {
-    margin-top: 4%;
+    /* margin-top: 4%; */
     min-width: 250px;
     height: 100%;
     background-image: url('https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1092571024%2F0x0.jpg%3Ffit%3Dscale');
@@ -11,7 +11,10 @@ body {
   * {
     box-sizing: border-box;
   }
-  
+  /* Adding a height to the header so it act as a block */
+  header{
+    height:58px;
+  }
   /* Remove margins and padding from the list */
   main ul {
     margin: 0;
