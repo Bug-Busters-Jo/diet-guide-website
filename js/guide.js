@@ -147,7 +147,8 @@ function calcolations(event) {
     idealwightExce.style.display = "none";
     overwightExce.style.display = "none";
     obsitywightExce.style.display = "none";
-
+    var good = document.getElementById("good"); 
+    var bad = document.getElementById("bad"); 
     if (userDate != null) {
         x = Number(userDate.height);
         y = Number(userDate.waigth);
@@ -167,6 +168,7 @@ function calcolations(event) {
     if (BWI <= 18.5) {
         var massage = "the under-weight"
         console.log(massage)
+        bad.play(); 
         rusltID = 'underwightExce';
         underwightExce.style.display = "block";
         console.log(massage)
@@ -174,16 +176,19 @@ function calcolations(event) {
     }
     else if (18.5 <= BWI && BWI <= 24.9) {
         var massage = " ideal weight ";
-        console.log(massage)
+        console.log(massage);
+        good.play(); 
         rusltID = 'idealwightExce';
         idealwightExce.style.display = "block";
     }
     else if (25 <= BWI && BWI <= 29.9) {
+        bad.play(); 
         var massage = " over-weight ";
         overwightExce.style.display = "block";
         rusltID = 'overwightExce';
     }
     else if (30 <= BWI) {
+        bad.play(); 
         var massage = " obesity weight ";
         obsitywightExce.style.display = "block";
         rusltID = 'obsitywightExce';
