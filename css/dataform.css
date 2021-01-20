@@ -13,7 +13,7 @@ header {
   width: 35%;
   border: 0.5px solid black;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  margin: auto;
+  margin: 30px auto;
   border-radius: 7px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.76);
@@ -32,16 +32,17 @@ p {
 }
 #swetch-page {
   /* right: -86px; */
-  display:inline-flex;
   position: relative;
   /* top: -57px; */
   background-color: #544147;
   border: none;
   border-radius: 3px;
   color: #fff;
-  font-size: 0.9em;
+  font-size: 14.4px;
   padding: 10px 10px;
   text-transform: uppercase;
+  
+  font-family: Arial;
   font-weight: normal;
 }
 
@@ -86,7 +87,7 @@ label {
   width: 85%;
 }
 
-#submitting {
+#submitting{
   border-radius: 3px;
   font-style: normal;
   position: relative;
@@ -99,4 +100,7 @@ label {
   text-transform: uppercase;
   font-weight: normal;
   margin-top: 10px;
+}
+#submitting, #swetch-page{
+  cursor:pointer;
 }
