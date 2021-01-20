@@ -15,6 +15,20 @@ body {
   header{
     height:58px;
   }
+  /* Made the main start the top of the page and centered the todo div */
+  #toDoMain{
+    position:absolute;
+    top:0;
+    width:100%;
+  }
+  #myDIV{
+    width:50%;
+    margin:100px auto;
+  }
+  #myUL{
+    width:50%;
+    margin:0 auto;
+  }
   /* Remove margins and padding from the list */
   main ul {
     margin: 0;
