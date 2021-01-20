@@ -16,19 +16,17 @@
         <ul id="nav">
           <a href="./index.html"><li class="brand-name"></li></a>
           <li class="nav-item"><a href="./AbouUs.html">About us</a></li>
-          <li class="nav-item"><a href="./guide.html">Guide</a></li>
-          <li class="nav-item"><a href="./toDoList.html">To-do List </a> </li>
           <ul class="nav-right">
+            
+            <li class="nav-item"><a href="./guide.html">Guide</a></li>
             <li><a id="login-logout" onclick="loginLogout()">Login </a></li>
-            <li><a href="./guide.html">Guide</a></li>
-            <!-- <li><a href="./toDoList.html">To do dist </a> </li> -->
+           
           </ul>
         </ul>
       </ul>
     </nav>
   </header>
     <main id="dataMain">
-      <section>
         <form id = 'log-form'>
           <div>
               <h1 id = 'logIn-UP'>Sign Up</h1>
@@ -65,11 +63,12 @@
   
               <div>
                   <input id="submitting" type="submit" value="Sign In">
+                  <a type = "button" id = 'swetch-page' onclick="loginPage()">I have Account</a>
                 </div>
                 
               </div>
             </form>
-            <button id = 'swetch-page' onclick="loginPage()">I have Account</button>
+           
     </main>
     <footer class = "footer">
       <ul id="aboutUs">
