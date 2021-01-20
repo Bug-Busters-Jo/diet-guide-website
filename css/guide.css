@@ -1,12 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
-
-/* /////////////////////////////////////////////////////////////////////////////////// */
-/* ////////////////////////////////////style the header/////////////////////////////////// */
-/* /////////////////////////////////////////////////////////////////////////////////// */
 header {
   display: block;
   width: 100%;
@@ -23,12 +18,7 @@ header nav {
   z-index: 10;
 }
 #nav {
-  /* padding:10px; */
 }
-
-/* #imageDiv{
-    margin-top: -13%;
-} */
 #nav .brand-name {
   background: url(../image/logo_transparent_trimmedPic.png);
   background-repeat: no-repeat;
@@ -90,8 +80,6 @@ main ol {
   margin-left: 20px;
 }
 .intro {
-  /* margin-top: -12%;
-    margin-left: 1%; */
 }
 .intro div ul {
   margin-left: 20px;
@@ -114,13 +102,9 @@ main ol {
   text-align: center;
 }
 .wrapper {
-  /* position: absolute; 
-    top: 64%; */
   transform: translateY(50%);
   width: 100%;
-  /* padding: 0 20px; */
   display: inline-block;
-  /* margin-left: -29%; */
 }
 .bmi-calculator {
   font-size: 50px;
@@ -130,7 +114,6 @@ main ol {
 .content-form {
   font-size: 20px;
   max-width: 550px;
-  /* margin: 0 auto; */
   background: #1b1a1a;
   padding: 30px;
   border-radius: 15px;
@@ -155,7 +138,6 @@ main ol {
 }
 .input-filed {
   color: black;
-  /* margin-left: 1%; */
 }
 .msg {
   height: 35px;
@@ -179,7 +161,6 @@ main ol {
   text-transform: uppercase;
   color: black;
   float: left;
-  /* margin-top: 10px; */
   margin: 20px;
 }
 .edit-form-div {
@@ -220,7 +201,7 @@ form input {
   width: 160px;
   display: inline;
 }
-.output-result-button{
+.output-result-button {
   padding: 12px;
   background-color: #f7c633;
   margin: 8px;
@@ -231,8 +212,6 @@ form input {
 .transform {
   position: relative;
   height: 400px;
-  /* margin-left: 45%;
-  margin-top: -38px; */
 }
 .move-image-right {
   position: absolute;
@@ -242,7 +221,6 @@ form input {
   left: 50%;
 }
 .rusltValue {
-  /* overflow: hidden; */
   background-color: #ffc32c;
   padding: 7px 10px;
   margin-left: 0%;
@@ -266,7 +244,6 @@ form input {
 }
 .style-results img {
   display: block;
-  /* width: 500px; */
   height: 500px;
   margin: 0 auto;
 }
@@ -288,7 +265,6 @@ form input {
   float: right;
   list-style: none;
 }
-/* Flex */
 .make-flex {
   width: 100%;
   display: flex;
@@ -298,9 +274,7 @@ form input {
 .text,
 .image {
   width: 50%;
-  /* display:flex; */
 }
-
 .make-flex:nth-child(even) > .text {
   order: 2;
 }

@@ -1,36 +1,12 @@
-/* go on then, styles go here.. knock yourself out!  */
-/* @import url(https://fonts.googleapis.com/css?family=Roboto);
-body {
-  padding: 20px;
-  box-sizing: border-box;
-  font-family: Roboto, Helvetica, Arial, serif;
-  background: url(http://www.hdwallsource.com/img/2014/10/blurred-36379-37207-hd-wallpapers.jpg);
-  background-size: cover;
-} */
-/* section{
-  width: 1000px;
-  height: 500px;
-}  */
 body {
   background-color: #131313;
 }
-
-/* section div{
-   width: 100%;
-   display: inline-block;
-  margin-left: 40px;
-  float: left;
-}
-.profile-card{
- 
-} */
 .firstDiv,
 .secondDiv,
 #video {
   display: flex;
   width: 80%;
   margin: 50px auto;
-  /* float: left; */
 }
 header img {
   border-radius: 50%;
@@ -106,7 +82,6 @@ header h2 {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   font-size: 17px;
   font-weight: normal;
-  /* line-height: 0px; */
   margin: 0;
 }
 
@@ -155,12 +130,6 @@ aside:hover .profile-social-links {
   border-radius: 50%;
   padding: 5px;
 }
-/* .profile-social-links {
-  margin-left: 7px;
-  margin-top: -350px;
-} */
-/*PROFILE IMAGE ANIMATE */
-
 @keyframes profile_image {
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -241,7 +210,6 @@ aside:hover .profile-social-links {
     transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
 }
-/*NAME ANIMATE */
 
 aside:hover header h1 {
   animation: name_and_job 1500ms linear both;
