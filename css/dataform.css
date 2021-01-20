@@ -8,7 +8,7 @@ header {
 }
 #dataMain {
   text-align: center;
-  height: 134vh;
+  height: 100vh;
 }
 #log-form {
   width: 35%;
@@ -42,7 +42,7 @@ p {
   font-size: 14.4px;
   padding: 10px 10px;
   text-transform: uppercase;
-  
+
   font-family: Arial;
   font-weight: normal;
 }
@@ -88,7 +88,7 @@ label {
   width: 85%;
 }
 
-#submitting{
+#submitting {
   border-radius: 3px;
   font-style: normal;
   position: relative;
@@ -102,6 +102,7 @@ label {
   font-weight: normal;
   margin-top: 10px;
 }
-#submitting, #swetch-page{
-  cursor:pointer;
+#submitting,
+#swetch-page {
+  cursor: pointer;
 }
