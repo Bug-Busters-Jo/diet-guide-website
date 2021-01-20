@@ -6,6 +6,10 @@ body {
 header {
   height: 58px;
 }
+.haver-class:hover {
+  background-color: white;
+  color: black;
+}
 
 #dataMain {
   text-align: center;

@@ -63,7 +63,7 @@ footer ul a {
 }
 .nav-right {
   float: right;
-  font-size: 18px;
+  font-size: 16px;
 }
 .brand-name {
   font-size: 2em;
@@ -192,7 +192,10 @@ main ol {
   cursor: pointer;
   text-transform: uppercase;
 }
-
+.haver-class:hover {
+  background-color: white;
+  color: black;
+}
 label {
   color: white;
 }

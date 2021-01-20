@@ -63,7 +63,7 @@ footer ul a {
 }
 .nav-right {
   float: right;
-  font-size: 18px;
+  font-size: 16px;
 }
 .brand-name {
   font-size: 2em;
@@ -207,6 +207,10 @@ section {
   display: block;
   margin: 0 auto;
   padding: 2%;
+}
+.haver-class:hover {
+  background-color: white;
+  color: black;
 }
 .form h3 {
   font-size: 25px;
