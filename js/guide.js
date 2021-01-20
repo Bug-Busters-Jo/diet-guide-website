@@ -52,6 +52,7 @@ window.onload = function () {
     var noAccount = document.getElementById('no-account');
     console.log(table, noAccount, 'div');
     var loginLogout = document.getElementById('login-logout');
+    document.getElementById('the-results').style.display = 'none';
 
     if (userDate != null) {
         isMached = true;
@@ -155,6 +156,7 @@ function calcolations(event) {
             return;
         }
     }
+    document.getElementById('the-results').style.display = 'block';    
     BWI = (y / ((x / 100) * (x / 100))).toFixed(1);
 
     if (BWI <= 18.5) {
