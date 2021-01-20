@@ -164,7 +164,6 @@ main ol {
   cursor: pointer;
   text-transform: uppercase;
   color: black;
-  float: left;
   margin: 20px;
 }
 .edit-form-div {
@@ -213,7 +212,7 @@ form input {
   border-color: #ddae21;
   top: -7px;
 }
-.transform {
+#transform {
   position: relative;
   height: 400px;
 }

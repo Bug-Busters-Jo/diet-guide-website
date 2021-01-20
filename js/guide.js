@@ -65,6 +65,10 @@ window.onload = function () {
         document.getElementById('name').textContent = userDate.name;
         document.getElementById('email').textContent = userDate.email;
         document.getElementById('mobile').textContent = userDate.mobile;
+        document.getElementById('change-style').style.marginBottom  = '20px';
+        document.getElementById('img-pos').style.left  = '57%'
+        document.getElementById('img-pos').style.top  = '-220px';
+        document.getElementById('transform').style.height = '180px';       
         document.getElementById('submit-accoumt').style.display = "block";
         loginLogout.textContent = ` Log Out`
     } else {
@@ -78,6 +82,7 @@ window.onload = function () {
 }
 
 function updateTheDate(event) {
+    console.log('hi')
     divEdit.style.display = 'block';
     document.getElementById('edit-botton').style.display = 'none';
     document.getElementById('waight-input').value = userDate.waigth;
