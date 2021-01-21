@@ -24,10 +24,13 @@ function demoFromHTML() {
     var pdf = new jsPDF({
         unit: 'pt'
     });
-    var source = $(`#${rusltID}`).clone(true);
-    source.find("img").css("width", "250px");
 
-    source = source.html();
+    var source = document.getElementById(rusltID).cloneNode(true);
+    console.log(source);
+    for(let i = 0 ; i< source.length; i++){
+        source[i].style.width =  "250px";
+    }
+
     var specialElementHandlers = {
         '#elementH': function (element, renderer) {
             return true;
